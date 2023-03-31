@@ -1,6 +1,26 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+import { ref } from 'vue'
+import { useI18n } from "vue-i18n"
+import i18n from "./plugins/i18n"
+
+const selected = ref('')
+
+const languages = ref([
+  { language: 'ca', title: 'Català' },
+  { language: 'es', title: 'Español' }
+])
+
+const { t } = useI18n({
+  inheritLocale: true,
+  useScope: 'local'
+})
+
+const changeLocale = (locale) => {
+  i18n.global.locale.value = locale
+}
 </script>
 
 <template>
@@ -8,7 +28,14 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld :msg="t('welcome')" />
+
+      <select v-model="selected" @change="changeLocale(selected)">
+        <option disabled value="Select language"></option>
+        <option v-for="lang in languages" :key="lang.title" :value="lang.language">
+          {{ lang.title }}
+        </option>
+      </select>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
