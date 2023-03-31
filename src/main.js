@@ -6,8 +6,6 @@ import i18n from './plugins/i18n'
 import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 
-import './assets/main.css'
-
 loadFonts()
 
 const app = createApp(App)
