@@ -5,4 +5,15 @@ import 'vuetify/styles'
 // Vuetify
 import { createVuetify } from 'vuetify'
 
-export default createVuetify()
+export default createVuetify({
+  theme: {
+    themes: {
+      light: {
+        colors: {
+          primary: '#003253',
+          secondary: '#FFFFFF',
+        },
+      },
+    },
+  },
+})
