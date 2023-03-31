@@ -3,8 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
 import { ref } from 'vue'
-import { useI18n } from "vue-i18n"
-import i18n from "./plugins/i18n"
+import { useI18n } from 'vue-i18n'
+import i18n from './plugins/i18n'
 
 const selected = ref('')
 
