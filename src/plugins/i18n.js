@@ -7,7 +7,7 @@ const i18n = createI18n({
   legacy: false,
   locale: import.meta.env.VITE_I18N_LOCALE || 'es',
   fallbackLocale: import.meta.env.VITE_I18N_FALLBACK_LOCALE || 'es',
-  messages: {es,ca}
+  messages: { es, ca }
 })
 
 export default i18n
