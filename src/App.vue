@@ -26,7 +26,7 @@ import { RouterView } from 'vue-router'
         </v-col>
         <v-col class="text-center mt-4" cols="12">
           <span>
-            © Copyright 2017. All Rights Reserved. <a href="http://www.teraac.com/aviso-legal/" target="_blank">Aviso
+            © Copyright 2017. All Rights Reserved. <a href="legal-notice" target="_blank">Aviso
               Legal</a>
           </span>
         </v-col>

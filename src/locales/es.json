@@ -4,5 +4,8 @@
   "language": "es",
   "contact": {
     "title": "CONTACTO"
+  },
+  "legal": {
+    "title": "AVISO LEGAL"
   }
 }
