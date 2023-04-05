@@ -14,8 +14,8 @@ import { RouterView } from 'vue-router'
     </v-main>
     <v-footer>
 
-      <v-row justify="center" no-gutters>
-        <v-col class="text-center mt-4" cols="12">
+      <v-row class="footer" justify="center" no-gutters>
+        <v-col class="text-left mt-4" cols="12">
           <div>
             <b>{{ $t('contact.title') }}</b><br>
             C/ Pompeu Fabra, 50<br>
@@ -26,8 +26,10 @@ import { RouterView } from 'vue-router'
         </v-col>
         <v-col class="text-center mt-4" cols="12">
           <span>
-            © Copyright 2017. All Rights Reserved. <a href="legal-notice" target="_blank">Aviso
-              Legal</a>
+            © Teraac Bosch Car Service S.L. 2023. Todos los derechos reservados.
+            <a href="legal-notice" target="_blank">
+              Aviso Legal
+            </a>
           </span>
         </v-col>
       </v-row>
