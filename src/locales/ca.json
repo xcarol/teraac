@@ -1,4 +1,15 @@
 {
+  "motto": "Per a tot el que el teu automòbil necessita.",
   "welcome": "Benvingut",
-  "language": "ca"
+  "language": "ca",
+  "contact": {
+    "title": "CONTACTE"
+  },
+  "legal": {
+    "title": "AVÍS LEGAL"
+  },
+  "landing-page": {
+    "title": "Teraac Bosch Car Service",
+    "description": "Teraac es caracteritza per ser una empresa que està proveïda dels darrers equipaments en matèria de diagnòstic i reparació de les avaries de l'automòbil."
+  }
 }
