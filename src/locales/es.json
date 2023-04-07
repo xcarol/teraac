@@ -1,7 +1,10 @@
 {
   "motto": "Para todo lo que tu automóvil necesita.",
-  "welcome": "Bienvenido",
-  "language": "es",
+  "language": "Idioma",
+  "languages": {
+    "ca": "Catalán",
+    "es": "Castellano"
+  },
   "contact": {
     "title": "CONTACTO"
   },

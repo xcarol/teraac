@@ -1,7 +1,10 @@
 {
   "motto": "Per a tot el que el teu automòbil necessita.",
-  "welcome": "Benvingut",
-  "language": "ca",
+  "language": "Idioma",
+  "languages": {
+    "ca": "Català",
+    "es": "Castellà"
+  },
   "contact": {
     "title": "CONTACTE"
   },

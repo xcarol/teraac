@@ -24,7 +24,7 @@ import { RouterView } from 'vue-router'
             Fax: 93 386 74 42
           </div>
         </v-col>
-        <v-col class="text-center mt-4" cols="12">
+        <v-col class="text-center mt-4" cols="11">
           <span>
             © Teraac Bosch Car Service S.L. 2023. Todos los derechos reservados.
             <a href="legal-notice" target="_blank">
@@ -32,10 +32,23 @@ import { RouterView } from 'vue-router'
             </a>
           </span>
         </v-col>
+        <v-col class="text-center mt-4" cols="1">
+          <LanguageSelector />
+        </v-col>
       </v-row>
-
-
-
     </v-footer>
   </v-app>
 </template>
+
+<script>
+import { defineComponent } from 'vue'
+import LanguageSelector from './components/LanguageSelector.vue'
+
+export default defineComponent({
+  name: 'HomeView',
+
+  components: {
+    LanguageSelector
+  }
+})
+</script>
