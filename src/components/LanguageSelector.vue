@@ -37,6 +37,7 @@ export default defineComponent({
     },
     changeLang(locale) {
       this.$i18n.locale = locale
+      this.$cookies.set('locale', locale)
     }
   }
 })
