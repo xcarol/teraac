@@ -32,7 +32,7 @@ import { RouterView } from 'vue-router'
             </a>
           </span>
         </v-col>
-        <v-col class="text-center mt-4" cols="1">
+        <v-col class="text-center mt-4 like-link" cols="1">
           <LanguageSelector />
         </v-col>
       </v-row>
