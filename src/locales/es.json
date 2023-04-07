@@ -1,12 +1,21 @@
 {
   "motto": "Para todo lo que tu automóvil necesita.",
-  "welcome": "Bienvenido",
-  "language": "es",
+  "language": "Idioma",
+  "languages": {
+    "ca": "Catalán",
+    "es": "Castellano"
+  },
   "contact": {
-    "title": "CONTACTO"
+    "title": "CONTACTO",
+    "street": "Calle Pompeu Fabra, 50",
+    "city": "08922 Santa Coloma de Gramenet (Barcelona)",
+    "phone": "Tel: 93 386 12 68",
+    "fax": "Fax: 93 386 74 42"
   },
   "legal": {
-    "title": "AVISO LEGAL"
+    "title": "AVISO LEGAL",
+    "copyright": "© Teraac Bosch Car Service S.L. 2023. Todos los derechos reservados.",
+    "notice": "Aviso Legal"
   },
   "landing-page": {
     "title": "Teraac Bosch Car Service",

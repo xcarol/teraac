@@ -18,24 +18,37 @@ import { RouterView } from 'vue-router'
         <v-col class="text-left mt-4" cols="12">
           <div>
             <b>{{ $t('contact.title') }}</b><br>
-            C/ Pompeu Fabra, 50<br>
-            08922 Santa Coloma de Gramenet (Barcelona)<br>
-            Tel: 93 386 12 68 <br>
-            Fax: 93 386 74 42
+            {{ $t('contact.street') }}<br>
+            {{ $t('contact.city') }}<br>
+            {{ $t('contact.phone') }}<br>
+            {{ $t('contact.fax') }}
           </div>
         </v-col>
-        <v-col class="text-center mt-4" cols="12">
+        <v-col class="text-center mt-4" cols="11">
           <span>
-            © Teraac Bosch Car Service S.L. 2023. Todos los derechos reservados.
+            {{ $t('legal.copyright') }}
             <a href="legal-notice" target="_blank">
-              Aviso Legal
+            {{ $t('legal.notice') }}
             </a>
           </span>
         </v-col>
+        <v-col class="text-center mt-4" cols="1">
+          <LanguageSelector />
+        </v-col>
       </v-row>
-
-
-
     </v-footer>
   </v-app>
 </template>
+
+<script>
+import { defineComponent } from 'vue'
+import LanguageSelector from './components/LanguageSelector.vue'
+
+export default defineComponent({
+  name: 'HomeView',
+
+  components: {
+    LanguageSelector
+  }
+})
+</script>
