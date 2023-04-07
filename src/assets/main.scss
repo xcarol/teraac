@@ -8,6 +8,9 @@
   src: url('@/assets/bosch-fonts/BoschSansCond-Bold.otf');
 }
 
+$link-style-color: #006EAD;
+$link-style-color-hover: #56B0FF;
+
 @mixin link-style($color) {
   font-family: boschsans-regular, sans-serif;
   font-size: 16px;
@@ -23,11 +26,11 @@ html {
 }
 
 a {
-  @include link-style(#006EAD)
+  @include link-style($link-style-color)
 }
 
 a:hover {
-  @include link-style(#56B0FF);
+  @include link-style($link-style-color-hover);
 }
 
 .title {
@@ -48,9 +51,9 @@ a:hover {
 }
 
 .like-link {
-  @include link-style(#006EAD)
+  @include link-style($link-style-color)
 }
 
 .like-link:hover {
-  @include link-style(#56B0FF);
+  @include link-style($link-style-color-hover);
 }
