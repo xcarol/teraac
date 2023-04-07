@@ -51,6 +51,7 @@ a:hover {
 }
 
 .like-link {
+  cursor: pointer;
   @include link-style($link-style-color)
 }
 
