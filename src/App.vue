@@ -4,6 +4,7 @@ import { RouterView } from 'vue-router'
 
 <template>
   <v-app>
+    <CookiesNotice />
     <v-app-bar>
       <v-app-bar-title>
         {{ $t('motto') }}
@@ -27,8 +28,8 @@ import { RouterView } from 'vue-router'
         <v-col class="text-center mt-4" cols="11">
           <span>
             {{ $t('legal.copyright') }}
-            <a href="legal-notice" target="_blank">
-            {{ $t('legal.notice') }}
+            <a href="/legal-notice" target="_blank">
+              {{ $t('legal.notice') }}
             </a>
           </span>
         </v-col>
@@ -43,12 +44,14 @@ import { RouterView } from 'vue-router'
 <script>
 import { defineComponent } from 'vue'
 import LanguageSelector from './components/LanguageSelector.vue'
+import CookiesNotice from './components/CookiesNotice.vue'
 
 export default defineComponent({
   name: 'HomeView',
 
   components: {
-    LanguageSelector
+    LanguageSelector,
+    CookiesNotice
   }
 })
 </script>
