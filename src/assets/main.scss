@@ -8,6 +8,8 @@
   src: url('@/assets/bosch-fonts/BoschSansCond-Bold.otf');
 }
 
+$menu-link-style-color: #000000;
+$menu-link-style-color-hover: #006EAD;
 $link-style-color: #006EAD;
 $link-style-color-hover: #56B0FF;
 
@@ -57,4 +59,17 @@ a:hover {
 
 .like-link:hover {
   @include link-style($link-style-color-hover);
+}
+
+.menu-link {
+  cursor: pointer;
+  @include link-style($menu-link-style-color);
+  margin-inline-start: 20px;
+  font-weight: 500 !important;
+}
+
+.menu-link:hover {
+  @include link-style($menu-link-style-color-hover);
+  margin-inline-start: 20px;
+  font-weight: 500 !important;
 }

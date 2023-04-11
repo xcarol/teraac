@@ -9,6 +9,18 @@ import { RouterView } from 'vue-router'
       <v-app-bar-title>
         {{ $t('motto') }}
       </v-app-bar-title>
+      <template v-slot:extension>
+        <v-row>
+          <v-col class="text-right" style="margin-inline-end: 16px;">
+            <a href="/about-us" class="menu-link">
+              {{ $t('menu.about-us') }}
+            </a>
+            <a href="/services" class="menu-link">
+              {{ $t('menu.services') }}
+            </a>
+          </v-col>
+        </v-row>
+      </template>
     </v-app-bar>
     <v-main>
       <RouterView />
