@@ -5,6 +5,10 @@
     "ca": "Catalán",
     "es": "Castellano"
   },
+  "menu": {
+    "about-us": "Quienes somos",
+    "services": "Servicios"
+  },
   "contact": {
     "title": "CONTACTO",
     "street": "Calle Pompeu Fabra, 50",
@@ -21,5 +25,25 @@
   "landing-page": {
     "title": "Teraac Bosch Car Service",
     "description": "Teraac se caracteriza por ser una empresa que esta provista de los últimos equipamientos en materia de diagnóstico y reparación de las averias del automóvil."
+  },
+  "service-linia-pre-itv": {
+    "title": "LINEA PRE ITV",
+    "text": "Frenómetro, suspensión, holguras y alineación"
+  },
+  "service-alineacio-direccio": {
+    "title": "ALINEACION DE DIRECCIÓN",
+    "text": "Convergencia, caida y avance"
+  },
+  "service-mecanica": {
+    "title": "MECÁNICA",
+    "text": "Cambio de aceite y filtros, motor, embrague, frenos, suspensión, refrigeración"
+  },
+  "service-aire-condicionat": {
+    "title": "AIRE ACONDICIONADO",
+    "text": "Reparación, cargas de gas y montaje de equipos"
+  },
+  "service-injeccio": {
+    "title": "INYECCIÓN GASOLINA Y DIESEL",
+    "text": "Diagnostico y reparación, análisis de gases."
   }
 }
