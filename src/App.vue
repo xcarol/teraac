@@ -5,11 +5,17 @@ import { RouterView } from 'vue-router'
 <template>
   <v-app>
     <CookiesNotice />
-    <v-app-bar>
-      <v-app-bar-title>
+    <v-app-bar flat height="25"></v-app-bar>
+    <v-app-bar flat color="#003253" height="60">
+      <v-app-bar-title class="motto">
         {{ $t('motto') }}
       </v-app-bar-title>
-      <template v-slot:extension>
+      <template v-slot:append>
+        <p class="company">TERAAC</p>
+      </template>
+    </v-app-bar>
+    <v-app-bar height="45">
+      <v-app-bar-title>
         <v-row>
           <v-col class="text-right" style="margin-inline-end: 16px;">
             <a href="/about-us" class="menu-link">
@@ -20,7 +26,7 @@ import { RouterView } from 'vue-router'
             </a>
           </v-col>
         </v-row>
-      </template>
+      </v-app-bar-title>
     </v-app-bar>
     <v-main>
       <RouterView />
