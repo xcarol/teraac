@@ -13,6 +13,16 @@ const router = createRouter({
       path: '/legal-notice',
       name: 'legal',
       component: () => import('../views/LegalNotice.vue')
+    },
+    {
+      path: '/about-us',
+      name: 'about',
+      component: () => import('../components/AboutUsPage.vue')
+    },
+    {
+      path: '/services',
+      name: 'services',
+      component: () => import('../components/ServicesPage.vue')
     }
   ]
 })
