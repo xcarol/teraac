@@ -48,6 +48,21 @@ a:hover {
   font-weight: 400;
 }
 
+.motto {
+  color: #FFFFFF;
+  font-family: boschsanscond-bold, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.company {
+  color: #FFFFFF;
+  font-family: boschsanscond-bold, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .footer {
   background-color: #EFF1F1;
 }
@@ -72,4 +87,13 @@ a:hover {
   @include link-style($menu-link-style-color-hover);
   margin-inline-start: 20px;
   font-weight: 500 !important;
+}
+
+.main-app-bar {
+  z-index: 9999 !important;
+  overflow: visible !important;
+}
+
+.logo {
+  cursor: pointer;
 }

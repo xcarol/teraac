@@ -5,11 +5,20 @@ import { RouterView } from 'vue-router'
 <template>
   <v-app>
     <CookiesNotice />
-    <v-app-bar>
-      <v-app-bar-title>
+    <v-app-bar flat height="25"></v-app-bar>
+    <v-app-bar flat color="#003253" height="60" class="main-app-bar">
+      <v-app-bar-title class="motto">
         {{ $t('motto') }}
       </v-app-bar-title>
-      <template v-slot:extension>
+      <template v-slot:append>
+        <p class="company">TERAAC</p>
+      </template>
+      <template v-slot:prepend>
+        <v-img @click="gotoMain()" :src="Logo" width="100" class="logo"></v-img>
+      </template>
+    </v-app-bar>
+    <v-app-bar height="45">
+      <v-app-bar-title>
         <v-row>
           <v-col class="text-right" style="margin-inline-end: 16px;">
             <a href="/about-us" class="menu-link">
@@ -20,7 +29,7 @@ import { RouterView } from 'vue-router'
             </a>
           </v-col>
         </v-row>
-      </template>
+      </v-app-bar-title>
     </v-app-bar>
     <v-main>
       <RouterView />
@@ -57,6 +66,7 @@ import { RouterView } from 'vue-router'
 import { defineComponent } from 'vue'
 import LanguageSelector from './components/LanguageSelector.vue'
 import CookiesNotice from './components/CookiesNotice.vue'
+import Logo from './assets/logo.svg'
 
 export default defineComponent({
   name: 'HomeView',
@@ -64,6 +74,12 @@ export default defineComponent({
   components: {
     LanguageSelector,
     CookiesNotice
+  },
+
+  methods: {
+    gotoMain() {
+      this.$router.push({ name: 'home' })
+    }
   }
 })
 </script>
