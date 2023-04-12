@@ -88,3 +88,12 @@ a:hover {
   margin-inline-start: 20px;
   font-weight: 500 !important;
 }
+
+.main-app-bar {
+  z-index: 9999 !important;
+  overflow: visible !important;
+}
+
+.logo {
+  cursor: pointer;
+}
