@@ -13,6 +13,7 @@ export default defineConfig({
   plugins: [
     vue(),
     VueI18nPlugin({
+      runtimeOnly: false,
       include: resolve(dirname(fileURLToPath(import.meta.url)), './locales/**'),
     }),
     vuetify({ autoImport: true })
