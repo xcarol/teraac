@@ -1,13 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: () => import('../views/HomeView.vue'),
     },
     {
       path: '/legal-notice',
@@ -15,7 +14,7 @@ const router = createRouter({
       component: () => import('../views/LegalNotice.vue')
     },
     {
-      path: '/about-us',
+      path: '/about',
       name: 'about',
       component: () => import('../components/AboutUsPage.vue')
     },

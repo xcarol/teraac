@@ -21,12 +21,8 @@ import { RouterView } from 'vue-router'
       <v-app-bar-title>
         <v-row>
           <v-col class="text-right" style="margin-inline-end: 16px;">
-            <a href="/about-us" class="menu-link">
-              {{ $t('menu.about-us') }}
-            </a>
-            <a href="/services" class="menu-link">
-              {{ $t('menu.services') }}
-            </a>
+            <router-link class="menu-link" to="about">{{ $t('menu.about-us') }}</router-link>
+            <router-link class="menu-link" to="services">{{ $t('menu.services') }}</router-link>
           </v-col>
         </v-row>
       </v-app-bar-title>
@@ -49,7 +45,7 @@ import { RouterView } from 'vue-router'
         <v-col class="text-center mt-4" cols="11">
           <span>
             {{ $t('legal.copyright') }}
-            <a href="/legal-notice" target="_blank">
+            <a href="#/legal-notice" target="_blank">
               {{ $t('legal.notice') }}
             </a>
           </span>

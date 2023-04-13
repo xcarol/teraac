@@ -2,7 +2,7 @@
   <v-app-bar class="cookies-notice-bar" flat height="40" v-if="cookieNotSet">
     <v-app-bar-title class="cookies-notice-title">
       <i18n-t keypath="legal.cookie-notice">
-        <a :href="legalNoticeUrl" target="_blank">{{ $t('legal.notice') }}</a>
+        <a href="#/legal-notice" target="_blank">{{ $t('legal.notice') }}</a>
       </i18n-t>
     </v-app-bar-title>
     <template v-slot:append>
@@ -18,7 +18,6 @@ export default defineComponent({
   name: 'CookiesNotice',
 
   data: () => ({
-    legalNoticeUrl: 'legal-notice',
     cookieTrg: undefined,
   }),
   beforeMount() {
