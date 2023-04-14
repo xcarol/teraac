@@ -26,7 +26,7 @@ export default defineComponent({
   computed: {
     cookieNotSet: {
       get() {
-        return this.cookieTrg != 1;
+        return this.cookieTrg !== 1;
       }
     }
   },

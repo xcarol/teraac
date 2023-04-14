@@ -5,7 +5,7 @@ import i18n from './plugins/i18n'
 import vuetify from './plugins/vuetify'
 import VueCookies from 'vue-cookies'
 
-import { loadFonts } from './plugins/webfontloader'
+import loadFonts from './plugins/webfontloader'
 
 loadFonts()
 

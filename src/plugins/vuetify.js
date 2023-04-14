@@ -1,5 +1,6 @@
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
+// eslint-disable-next-line import/no-unresolved
 import 'vuetify/styles'
 import '../assets/main.scss'
 
