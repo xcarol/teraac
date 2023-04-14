@@ -15,13 +15,13 @@
 </template>
 
 <script>
-import banner from '../assets/Porta-500x250.jpg'
+import banner from '../assets/Porta-500x250.jpg';
 
 export default {
   name: 'LandingPage',
 
   data: () => ({
     banner,
-  })
-}
+  }),
+};
 </script>

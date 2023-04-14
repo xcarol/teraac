@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'CookiesNotice',
@@ -21,22 +21,22 @@ export default defineComponent({
     cookieTrg: undefined,
   }),
   beforeMount() {
-    this.cookieTrg = this.$cookies.get('cookies-notice')
+    this.cookieTrg = this.$cookies.get('cookies-notice');
   },
   computed: {
     cookieNotSet: {
       get() {
         return this.cookieTrg !== 1;
-      }
-    }
+      },
+    },
   },
   methods: {
     closeCookiesNotice() {
       this.cookieTrg = 1;
-      this.$cookies.set('cookies-notice', 1)
-    }
-  }
-})
+      this.$cookies.set('cookies-notice', 1);
+    },
+  },
+});
 </script>
 
 <style scoped>

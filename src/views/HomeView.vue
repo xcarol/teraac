@@ -3,16 +3,16 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 // Components
-import Landing from '../components/LandingPage.vue'
+import Landing from '../components/LandingPage.vue';
 
 export default defineComponent({
   name: 'HomeView',
 
   components: {
-    Landing
-  }
-})
+    Landing,
+  },
+});
 </script>

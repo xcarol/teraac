@@ -1,11 +1,11 @@
 // Styles
-import '@mdi/font/css/materialdesignicons.css'
+import '@mdi/font/css/materialdesignicons.css';
 // eslint-disable-next-line import/no-unresolved
-import 'vuetify/styles'
-import '../assets/main.scss'
+import 'vuetify/styles';
+import '../assets/main.scss';
 
 // Vuetify
-import { createVuetify } from 'vuetify'
+import { createVuetify } from 'vuetify';
 
 export default createVuetify({
   theme: {
@@ -19,4 +19,4 @@ export default createVuetify({
       },
     },
   },
-})
+});

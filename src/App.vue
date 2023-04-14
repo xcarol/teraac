@@ -1,5 +1,5 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
@@ -59,25 +59,25 @@ import { RouterView } from 'vue-router'
 </template>
 
 <script>
-import { defineComponent } from 'vue'
-import LanguageSelector from './components/LanguageSelector.vue'
-import CookiesNotice from './components/CookiesNotice.vue'
-import Logo from './assets/logo.svg'
+import { defineComponent } from 'vue';
+import LanguageSelector from './components/LanguageSelector.vue';
+import CookiesNotice from './components/CookiesNotice.vue';
+import Logo from './assets/logo.svg';
 
 export default defineComponent({
   name: 'HomeView',
 
   components: {
     LanguageSelector,
-    CookiesNotice
+    CookiesNotice,
   },
 
   methods: {
     gotoMain() {
-      this.$router.push({ name: 'home' })
-    }
-  }
-})
+      this.$router.push({ name: 'home' });
+    },
+  },
+});
 </script>
 
 <style scoped>

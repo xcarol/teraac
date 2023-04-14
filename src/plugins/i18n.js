@@ -1,8 +1,8 @@
-import VueCookies from 'vue-cookies'
-import { createI18n } from 'vue-i18n'
+import VueCookies from 'vue-cookies';
+import { createI18n } from 'vue-i18n';
 
-import es from '../locales/es.json'
-import ca from '../locales/ca.json'
+import es from '../locales/es.json';
+import ca from '../locales/ca.json';
 
 function getUserLanguage() {
   return VueCookies.get('locale');
@@ -23,7 +23,7 @@ const i18n = createI18n({
   legacy: false,
   locale,
   fallbackLocale: import.meta.env.VITE_I18N_FALLBACK_LOCALE || 'es',
-  messages: { es, ca }
-})
+  messages: { es, ca },
+});
 
-export default i18n
+export default i18n;
