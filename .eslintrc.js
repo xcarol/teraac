@@ -7,7 +7,6 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     'airbnb-base',
-    '@vue/eslint-config-prettier/skip-formatting'
   ],
   overrides: [
   ],
