@@ -79,3 +79,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped>
+:deep() .v-toolbar__prepend {
+  align-self: auto;
+}
+</style>
