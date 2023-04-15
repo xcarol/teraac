@@ -64,15 +64,17 @@ a:hover {
 }
 
 .footer {
-  background-color: #EFF1F1;
+  background-color: #eff1f1;
 }
 
 .like-link {
   cursor: pointer;
+
   @include link-style($link-style-color);
 }
 
 .like-link:hover {
+
   @include link-style($link-style-color-hover);
 }
 
