@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import VueCookies from 'vue-cookies';
 import { createI18n } from 'vue-i18n';
 
