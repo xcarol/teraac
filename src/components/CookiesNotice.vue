@@ -26,14 +26,14 @@ export default defineComponent({
   computed: {
     cookieNotSet: {
       get() {
-        return this.cookieTrg !== 1;
+        return this.cookieTrg !== '1';
       },
     },
   },
   methods: {
     closeCookiesNotice() {
-      this.cookieTrg = 1;
-      this.$cookies.set('cookies-notice', 1);
+      this.cookieTrg = '1';
+      this.$cookies.set('cookies-notice', '1');
     },
   },
 });
