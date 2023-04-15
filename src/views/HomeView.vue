@@ -1,18 +1,7 @@
+<script setup>
+import Landing from './Landing.vue';
+</script>
+
 <template>
   <Landing />
 </template>
-
-<script>
-import { defineComponent } from 'vue';
-
-// Components
-import Landing from '../components/LandingPage.vue';
-
-export default defineComponent({
-  name: 'HomeView',
-
-  components: {
-    Landing,
-  },
-});
-</script>
