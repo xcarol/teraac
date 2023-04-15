@@ -24,7 +24,7 @@ const i18n = createI18n({
   legacy: false,
   locale,
   fallbackLocale: import.meta.env.VITE_I18N_FALLBACK_LOCALE || 'es',
-  messages: { es, ca },
+  messages: { es, ca, 'ca-ES': ca },
 });
 
 export default i18n;
