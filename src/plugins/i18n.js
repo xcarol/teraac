@@ -16,15 +16,19 @@ export function getBrowserLang() {
     [browserLocale] = navigator.languages;
   }
 
+  if (browserLocale === 'ca-ES') {
+    browserLocale = 'ca';
+  }
+
   return browserLocale;
 }
 
-const locale = getUserLanguage() || getBrowserLang() || import.meta.env.VUE_APP_I18N_LOCALE || 'es';
+const locale = getUserLanguage() || getBrowserLang() || import.meta.env.VUE_APP_I18N_LOCALE || 'ca';
 const i18n = createI18n({
   legacy: false,
   locale,
-  fallbackLocale: import.meta.env.VITE_I18N_FALLBACK_LOCALE || 'es',
-  messages: { es, ca, 'ca-ES': ca },
+  fallbackLocale: import.meta.env.VITE_I18N_FALLBACK_LOCALE || 'ca',
+  messages: { es, ca },
 });
 
 export default i18n;
