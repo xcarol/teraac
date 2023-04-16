@@ -12,6 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.xicra.com
-        server-dir: /teraac.xicra.com/
-        username: xcarol
+        username: teraac
         password: ${{ secrets.ftp_password }}
