@@ -24,7 +24,7 @@ export default {
     LegalEs,
   },
 
-  beforeMount() {
+  beforeUpdate() {
     this.locale = this.$cookies.get('locale');
   },
 };
