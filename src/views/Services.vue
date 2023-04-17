@@ -12,7 +12,7 @@
 
           <v-card-text>
             {{ $t(service.name + '.text') }}
-          </v-card-text>  
+          </v-card-text>
         </v-card>
 
       </v-col>
@@ -21,11 +21,11 @@
 </template>
 
 <script>
-import serviceLiniaPreITVImg from '../assets/service-linia-pre-itv.jpg'
-import serviceAlineacioDireccioImg from '../assets/service-alineacio-direccio.jpg'
-import serviceMecanicaImg from '../assets/service-mecanica.jpg'
-import serviceAireCondicionatImg from '../assets/service-aire-condicionat.jpg'
-import serviceInjeccioImg from '../assets/service-injeccio.jpg'
+import serviceLiniaPreITVImg from '../assets/service-linia-pre-itv.jpg';
+import serviceAlineacioDireccioImg from '../assets/service-alineacio-direccio.jpg';
+import serviceMecanicaImg from '../assets/service-mecanica.jpg';
+import serviceAireCondicionatImg from '../assets/service-aire-condicionat.jpg';
+import serviceInjeccioImg from '../assets/service-injeccio.jpg';
 
 export default {
   name: 'ServicesPage',
@@ -42,6 +42,6 @@ export default {
       { name: 'service-aire-condicionat', img: serviceAireCondicionatImg },
       { name: 'service-injeccio', img: serviceInjeccioImg },
     ];
-  }
-}
+  },
+};
 </script>

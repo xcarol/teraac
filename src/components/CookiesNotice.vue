@@ -1,7 +1,7 @@
 <template>
   <v-app-bar class="cookies-notice-bar" flat height="40" v-if="cookieNotSet">
     <v-app-bar-title class="cookies-notice-title">
-      <i18n-t keypath="legal.cookie-notice">
+      <i18n-t keypath="legal.cookie-notice" scope="global">
         <a href="#/legal-notice" target="_blank">{{ $t('legal.notice') }}</a>
       </i18n-t>
     </v-app-bar-title>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'CookiesNotice',
@@ -21,22 +21,22 @@ export default defineComponent({
     cookieTrg: undefined,
   }),
   beforeMount() {
-    this.cookieTrg = this.$cookies.get('cookies-notice')
+    this.cookieTrg = this.$cookies.get('cookies-notice');
   },
   computed: {
     cookieNotSet: {
       get() {
-        return this.cookieTrg != 1;
-      }
-    }
+        return this.cookieTrg !== '1';
+      },
+    },
   },
   methods: {
     closeCookiesNotice() {
-      this.cookieTrg = 1;
-      this.$cookies.set('cookies-notice', 1)
-    }
-  }
-})
+      this.cookieTrg = '1';
+      this.$cookies.set('cookies-notice', '1');
+    },
+  },
+});
 </script>
 
 <style scoped>

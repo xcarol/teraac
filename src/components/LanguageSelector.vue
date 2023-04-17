@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'LanguageSelector',
@@ -23,22 +23,22 @@ export default defineComponent({
     items: [],
   }),
   beforeMount() {
-    this.updateLocaleList()
+    this.updateLocaleList();
   },
   methods: {
     updateLocaleList() {
-      this.items = []
-      this.$i18n.availableLocales.forEach(locale => {
+      this.items = [];
+      this.$i18n.availableLocales.forEach((locale) => {
         this.items.push({
           title: this.$t(`languages.${locale}`, 0, { locale }),
           value: locale,
-        })
-      })
+        });
+      });
     },
     changeLang(locale) {
-      this.$i18n.locale = locale
-      this.$cookies.set('locale', locale)
-    }
-  }
-})
+      this.$i18n.locale = locale;
+      this.$cookies.set('locale', locale);
+    },
+  },
+});
 </script>

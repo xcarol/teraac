@@ -1,27 +1,27 @@
 <template>
-  <v-card :title="this.$t('legal.title')">
+  <v-card flat :title="this.$t('menu.about-us')">
     <div v-if="locale === 'ca'">
-      <LegalCa />
+      <AboutUsCa />
     </div>
     <div v-else>
-      <LegalEs />
+      <AboutUsEs />
     </div>
   </v-card>
 </template>
 
 <script>
-import LegalCa from '../components/LegalCa.vue';
-import LegalEs from '../components/LegalEs.vue';
+import AboutUsCa from '../components/AboutUsCa.vue';
+import AboutUsEs from '../components/AboutUsEs.vue';
 
 export default {
-  name: 'LegalNotice',
+  name: 'AboutUs',
 
   data: () => ({
     locale: 'ca',
   }),
   components: {
-    LegalCa,
-    LegalEs,
+    AboutUsCa,
+    AboutUsEs,
   },
 
   beforeUpdate() {

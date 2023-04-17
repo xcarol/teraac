@@ -8,10 +8,10 @@
   src: url('@/assets/bosch-fonts/BoschSansCond-Bold.otf');
 }
 
-$menu-link-style-color: #000000;
-$menu-link-style-color-hover: #006EAD;
-$link-style-color: #006EAD;
-$link-style-color-hover: #56B0FF;
+$menu-link-style-color: #000;
+$menu-link-style-color-hover: #006ead;
+$link-style-color: #006ead;
+$link-style-color-hover: #56b0ff;
 
 @mixin link-style($color) {
   font-family: boschsans-regular, sans-serif;
@@ -28,7 +28,7 @@ html {
 }
 
 a {
-  @include link-style($link-style-color)
+  @include link-style($link-style-color);
 }
 
 a:hover {
@@ -49,7 +49,7 @@ a:hover {
 }
 
 .motto {
-  color: #FFFFFF;
+  color: #fff;
   font-family: boschsanscond-bold, sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -57,19 +57,20 @@ a:hover {
 }
 
 .company {
-  color: #FFFFFF;
+  color: #fff;
   font-family: boschsanscond-bold, sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
 
 .footer {
-  background-color: #EFF1F1;
+  background-color: #eff1f1;
 }
 
 .like-link {
+  @include link-style($link-style-color);
+
   cursor: pointer;
-  @include link-style($link-style-color)
 }
 
 .like-link:hover {
@@ -77,14 +78,16 @@ a:hover {
 }
 
 .menu-link {
-  cursor: pointer;
   @include link-style($menu-link-style-color);
+
+  cursor: pointer;
   margin-inline-start: 20px;
   font-weight: 500 !important;
 }
 
 .menu-link:hover {
   @include link-style($menu-link-style-color-hover);
+
   margin-inline-start: 20px;
   font-weight: 500 !important;
 }
