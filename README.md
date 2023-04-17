@@ -1,3 +1,4 @@
+![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
 # Teraac
 
 Website for the Teraac car workshop
