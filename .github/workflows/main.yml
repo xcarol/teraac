@@ -14,11 +14,6 @@ jobs:
         node-version: 18
     - run: npm ci
     - run: npm run build
-
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
     - uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.xicra.com
