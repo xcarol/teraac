@@ -1,4 +1,4 @@
-![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
+![example event parameter](https://github.com/xcarol/teraac/actions/workflows/main.yml/badge.svg?event=push) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/575fb58f2fe84e0e928be80c6f3456cc)](https://app.codacy.com/gh/xcarol/teraac/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 # Teraac
 
 Website for the Teraac car workshop
