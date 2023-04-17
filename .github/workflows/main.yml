@@ -27,6 +27,7 @@ jobs:
         username: ${{ secrets.MY_EMAIL }}
         password: ${{ secrets.MY_EMAIL_PASSWORD }}
         subject: L'execució ha estat un èxit
+        from: xcarolr@gmail.com
         body: |
           Hola,
 
