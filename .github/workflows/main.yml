@@ -2,10 +2,10 @@ on:
   push:
     branches: [ "master" ]
 
-name: 🚀 Build & Deploy website on push
+name: Build & Deploy website on push
 jobs:
   build:
-    name: 🚀 Build
+    name: Build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -21,7 +21,7 @@ jobs:
         path: ./dist/
   deploy:
     needs: build
-    name: 🚀 Deploy
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
     - name: Descarrega les dades del job1
@@ -37,7 +37,7 @@ jobs:
         local-dir: ./dist/
   email:
     needs: build
-    name: 🚀 Email
+    name: Email
     runs-on: ubuntu-latest
     steps:
     - uses: dawidd6/action-send-mail@v3.1.0
@@ -46,13 +46,12 @@ jobs:
         server_port: 465
         username: ${{ secrets.MY_EMAIL }}
         password: ${{ secrets.MY_EMAIL_PASSWORD }}
-        subject: L'execució ha estat un èxit
+        subject: Nova versió de la web
         from: xcarolr@gmail.com
         body: |
-          Hola,
+          Bones,
 
-          L'execució del teu flux de treball ha estat un èxit.
+          Hi ha una versió de la web
 
-          Salutacions,
-          GitHub Actions
-        to: xcarolr+mola@gmail.com
+          Salutacions!
+        to: xcarolr@gmail.com, info@teraac.com
