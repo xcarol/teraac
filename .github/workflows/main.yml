@@ -14,17 +14,25 @@ jobs:
         node-version: 18
     - run: npm ci
     - run: npm run build
-    - name: Deploy
-      if: ${{ success() }}
+  deploy:
+    needs: build
+    name: 🚀 Deploy
+    runs-on: ubuntu-latest
+    steps:
     - uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      if: ${{ success() }}
       with:
         server: ftp.xicra.com
         username: teraac
         password: ${{ secrets.ftp_password }}
         local-dir: ./dist/
-    - name: Send success email
-      if: ${{ success() }}
+  email:
+    needs: build
+    name: 🚀 Email
+    runs-on: ubuntu-latest
+    steps:
     - uses: dawidd6/action-send-mail@v3.1.0
+      if: ${{ success() }}
       with:
         server_address: smtp.gmail.com
         server_port: 465
