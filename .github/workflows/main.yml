@@ -1,10 +1,12 @@
-on: push
-name: 🚀 Deploy website on push
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
+on:
+  push:
+    branches: [ "master" ]
 
+name: 🚀 Build & Deploy website on push
+jobs:
+  build:
+    name: 🚀 Build
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
@@ -12,8 +14,11 @@ jobs:
         node-version: 18
     - run: npm ci
 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.xicra.com
         username: teraac
