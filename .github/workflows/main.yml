@@ -19,7 +19,7 @@ jobs:
       with:
         name: dist
         path: ./dist/
-    - name: Store release notes
+    - name: Store release notes Joool
       uses: actions/upload-artifact@v2
       with:
         name: notes
