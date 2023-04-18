@@ -65,7 +65,7 @@ jobs:
         body: |
           Bones,
 
-          Hi ha una versió de la web. Aquests són els canvis:
+          Hi ha una versió de la web i aquests són els canvis:
           
           ${{ steps.read-file.outputs.content }}
 
