@@ -2,7 +2,6 @@
   <v-container>
     <v-row>
       <v-col cols="3" v-for="service in services" :key="service.name">
-
         <v-card flat>
           <v-img :src="service.img" height="300px" cover></v-img>
 
@@ -14,7 +13,6 @@
             {{ $t(service.name + '.text') }}
           </v-card-text>
         </v-card>
-
       </v-col>
     </v-row>
   </v-container>

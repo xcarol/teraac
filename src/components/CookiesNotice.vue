@@ -45,8 +45,8 @@ a {
 }
 
 .cookies-notice-bar {
-  background-color: #FFCDD2 !important;
-  color: #E57373 !important;
+  background-color: #ffcdd2 !important;
+  color: #e57373 !important;
 }
 
 .cookies-notice-title {
