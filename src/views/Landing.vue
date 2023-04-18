@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row  justify="space-around">
+    <v-row justify="space-around">
       <v-col cols="12" sm="6">
         <v-img :src="banner"></v-img>
       </v-col>

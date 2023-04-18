@@ -8,10 +8,11 @@ import LanguageSelector from './LanguageSelector.vue';
     <v-row class="footer" justify="center" no-gutters>
       <v-col class="text-left mt-4" cols="12">
         <div>
-          <b>{{ $t('contact.title') }}</b><br>
-          {{ $t('contact.street') }}<br>
-          {{ $t('contact.city') }}<br>
-          {{ $t('contact.phone') }}<br>
+          <b>{{ $t('contact.title') }}</b
+          ><br />
+          {{ $t('contact.street') }}<br />
+          {{ $t('contact.city') }}<br />
+          {{ $t('contact.phone') }}<br />
           {{ $t('contact.fax') }}
         </div>
       </v-col>

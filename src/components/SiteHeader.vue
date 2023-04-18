@@ -28,8 +28,13 @@
   </v-app-bar>
   <v-navigation-drawer location="right" v-model="drawer" temporary>
     <v-list>
-      <v-list-item class="menu-link" v-for="item in items" :key="item.to" :title="$t(item.menu)"
-        @click.stop="goto(item.to)">
+      <v-list-item
+        class="menu-link"
+        v-for="item in items"
+        :key="item.to"
+        :title="$t(item.menu)"
+        @click.stop="goto(item.to)"
+      >
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
