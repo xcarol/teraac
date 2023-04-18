@@ -1,19 +1,26 @@
 on:
   push:
-    branches: [ "gitflow" ]
+    branches: [ "master" ]
 
 name: Build & Deploy
 jobs:
   build:
     name: Build
-    runs-on: ubuntu@latest
+    runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-    - name: Read package.json
-      id: package
-      uses: juliangruber/read-file-action@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
-        path: ./package.json
-    - name: Echo package.json
-      run: echo "${{ steps.package.outputs.content }}"
+        node-version: 18
+    - run: npm ci
+    - run: npm run build
+    - name: Store production build
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: ./dist/
+    - name: Store release notes
+      uses: actions/upload-artifact@v2
+      with:
+        name: notes
+        path: ./README.md
