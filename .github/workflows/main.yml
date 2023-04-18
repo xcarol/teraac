@@ -52,9 +52,9 @@ jobs:
         path: ./README.md
     - name: Read release notes
       id: read-file
-      uses: juliangruber/read-file-action@v1
+      uses: komorebitech/read-files-action@v1.5
       with:
-        path: ./README.md
+        files: '["./README.md"]'
     - uses: dawidd6/action-send-mail@v3.1.0
       with:
         server_address: smtp.gmail.com
