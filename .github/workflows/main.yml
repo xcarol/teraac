@@ -54,7 +54,7 @@ jobs:
       id: read-file
       uses: juliangruber/read-file-action@v1.1.6
       with:
-        path: ./README.md
+        path: /home/runner/work/teraac/teraac/README.md
     - uses: dawidd6/action-send-mail@v3.1.0
       with:
         server_address: smtp.gmail.com
