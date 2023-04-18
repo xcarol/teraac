@@ -1,6 +1,6 @@
 on: push
 jobs:
-  algo:
+  algomas:
     runs-on: ubuntu@latest
     steps:
     - name: Checkout repository
