@@ -2,7 +2,7 @@ on:
   push:
     branches: [ "master" ]
 
-name: Build & Deploy website on push
+name: Build & Deploy
 jobs:
   build:
     name: Build
@@ -14,17 +14,22 @@ jobs:
         node-version: 18
     - run: npm ci
     - run: npm run build
-    - name: Emmagatzema l'arxiu de dades
+    - name: Store production build
       uses: actions/upload-artifact@v2
       with:
         name: dist
         path: ./dist/
+    - name: Store release notes
+      uses: actions/upload-artifact@v2
+      with:
+        name: notes
+        path: ./README.md
   deploy:
     needs: build
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Descarrega les dades del job1
+    - name: Recover production build
       uses: actions/download-artifact@v2
       with:
         name: dist
@@ -40,6 +45,15 @@ jobs:
     name: Email
     runs-on: ubuntu-latest
     steps:
+    - name: Recover release notes
+      uses: actions/download-artifact@v2
+      with:
+        name: notes
+        path: ./README.md
+    - id: read-file
+      uses: actions/read-file@v2
+      with:
+        path: ./README.md
     - uses: dawidd6/action-send-mail@v3.1.0
       with:
         server_address: smtp.gmail.com
@@ -51,7 +65,9 @@ jobs:
         body: |
           Bones,
 
-          Hi ha una versió de la web
+          Hi ha una versió de la web. Aquests són els canvis:
+          
+          ${{ steps.read-file.outputs.content }}
 
           Salutacions!
-        to: xcarolr@gmail.com, info@teraac.com
+        to: xcarolr@gmail.com
