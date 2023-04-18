@@ -41,7 +41,7 @@ jobs:
         password: ${{ secrets.ftp_password }}
         local-dir: ./dist/
   email:
-    needs: build
+    needs: deploy
     name: Email
     runs-on: ubuntu-latest
     steps:
@@ -50,8 +50,9 @@ jobs:
       with:
         name: notes
         path: ./README.md
-    - id: read-file
-      uses: actions/read-file@v2
+    - name: Read release notes
+      id: read-file
+      uses: juliangruber/read-file-action@v1
       with:
         path: ./README.md
     - uses: dawidd6/action-send-mail@v3.1.0
