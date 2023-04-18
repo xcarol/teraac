@@ -6,69 +6,14 @@ name: Build & Deploy
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu@latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Read package.json
+      id: package
+      uses: juliangruber/read-file-action@v1
       with:
-        node-version: 18
-    - run: npm ci
-    - run: npm run build
-    - name: Store production build
-      uses: actions/upload-artifact@v3
-      with:
-        name: dist
-        path: ./dist/
-    - name: Store release notes
-      uses: actions/upload-artifact@v3
-      with:
-        name: notes
-        path: ./README.md
-  deploy:
-    needs: build
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: Recover production build
-      uses: actions/download-artifact@v3
-      with:
-        name: dist
-        path: ./dist/
-    - uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ftp.xicra.com
-        username: teraac
-        password: ${{ secrets.ftp_password }}
-        local-dir: ./dist/
-  email:
-    needs: deploy
-    name: Email
-    runs-on: ubuntu-latest
-    steps:
-    - name: Recover release notes
-      uses: actions/download-artifact@v3
-      with:
-        name: notes
-        path: ./README.md
-    - name: Read release notes
-      id: read-file
-      uses: juliangruber/read-file-action@v1.1.6
-      with:
-        path: /home/runner/work/teraac/teraac/README.md
-    - uses: dawidd6/action-send-mail@v3.1.0
-      with:
-        server_address: smtp.gmail.com
-        server_port: 465
-        username: ${{ secrets.MY_EMAIL }}
-        password: ${{ secrets.MY_EMAIL_PASSWORD }}
-        subject: Nova versió de la web
-        from: xcarolr@gmail.com
-        body: |
-          Bones,
-
-          Hi ha una versió de la web. Aquests són els canvis:
-          
-          ${{ steps.read-file.outputs.content }}
-
-          Salutacions!
-        to: xcarolr@gmail.com
+        path: ./package.json
+    - name: Echo package.json
+      run: echo "${{ steps.package.outputs.content }}"
