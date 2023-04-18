@@ -22,10 +22,15 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
+      - name: Recover production build
+        uses: actions/download-artifact@v2
+        with:
+          name: notes
+          path: ./
       - name: Read package.json
         id: package
         uses: juliangruber/read-file-action@v1
         with:
-          path: ./package.json
+          path: ./README.md
       - name: Echo package.json
         run: echo "${{ steps.package.outputs.content }}"
