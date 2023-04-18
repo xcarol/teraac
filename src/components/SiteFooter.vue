@@ -15,7 +15,7 @@ import LanguageSelector from './LanguageSelector.vue';
           {{ $t('contact.fax') }}
         </div>
       </v-col>
-      <v-col class="text-center mt-4" cols="11">
+      <v-col class="text-center mt-4" cols="12" sm="11">
         <span>
           {{ $t('legal.copyright') }}
           <a href="#/legal-notice" target="_blank">
@@ -23,7 +23,7 @@ import LanguageSelector from './LanguageSelector.vue';
           </a>
         </span>
       </v-col>
-      <v-col class="text-center mt-4 like-link" cols="1">
+      <v-col class="text-center mt-4 like-link" cols="12" sm="1">
         <LanguageSelector />
       </v-col>
     </v-row>
