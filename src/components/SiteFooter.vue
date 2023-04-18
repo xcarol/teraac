@@ -8,8 +8,7 @@ import LanguageSelector from './LanguageSelector.vue';
     <v-row class="footer" no-gutters>
       <v-col class="text-left mt-4" cols="12">
         <div>
-          <b>{{ $t('contact.title') }}</b
-          ><br />
+          <b>{{ $t('contact.title') }}</b><br />
           {{ $t('contact.street') }}<br />
           {{ $t('contact.city') }}<br />
           {{ $t('contact.phone') }}<br />
@@ -19,9 +18,9 @@ import LanguageSelector from './LanguageSelector.vue';
       <v-col class="text-center mt-4 mb-4" cols="12" sm="11">
         <span>
           {{ $t('legal.copyright') }}
-          <a href="#/legal-notice" target="_blank">
+          <router-link to="legal-notice">
             {{ $t('legal.notice') }}
-          </a>
+          </router-link>
         </span>
       </v-col>
       <v-col class="text-center mt-4 like-link" cols="12" sm="1">
