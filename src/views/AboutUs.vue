@@ -25,6 +25,10 @@ export default {
     AboutUsEs,
   },
 
+  beforeMount() {
+    this.locale = this.$cookies.get('locale');
+  },
+
   beforeUpdate() {
     this.locale = this.$cookies.get('locale');
   },
