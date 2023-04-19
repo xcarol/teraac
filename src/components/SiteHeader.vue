@@ -52,7 +52,6 @@ export default defineComponent({
     drawer: false,
     items: [
       { to: 'about', menu: 'menu.about-us' },
-      { to: 'services', menu: 'menu.services' },
     ],
   }),
 
