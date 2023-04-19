@@ -35,17 +35,14 @@ export default {
     mailto: '',
     phone1: '',
     phone2: '',
-    mapurl: 'https://www.google.com/maps/embed'
-            + '?pb=!1m18!1m12!1m3!1d1283.653473265026!2d2.2067561103365083'
-            + '!3d41.45030563810665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1'
-            + '!3m3!1m2!1s0x12a4bc928693d749%3A0x9d936eae07a496ff'
-            + '!2sBosch%20Car%20Service%20Teraac!5e0!3m2!1sca!2ses!4v1681918706980!5m2!1sca!2ses',
+    mapurl: '',
   }),
 
   beforeMount() {
     this.mailto = `mailto:${this.$t('contact.email')}`;
     this.phone1 = `tel:${this.$t('contact.phone1')}`;
     this.phone2 = `tel:${this.$t('contact.phone2')}`;
+    this.mapurl = import.meta.env.VITE_GOOGLE_API_KEY;
   },
 };
 </script>
