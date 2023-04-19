@@ -1,21 +1,7 @@
 <template>
-  <v-menu>
-    <template v-slot:activator="{ props }">
-      <span v-bind="props">
-        {{ $t('language') }}
-      </span>
-    </template>
-    <v-list>
-      <v-list-item
-        v-for="(item, index) in items"
-        :key="index"
-        :value="index"
-        @click="changeLang(item.value)"
-      >
-        <v-list-item-title>{{ item.title }}</v-list-item-title>
-      </v-list-item>
-    </v-list>
-  </v-menu>
+  <span @click.stop="switchLanguage()">
+    {{ altLanguage }}
+  </span>
 </template>
 
 <script>
@@ -25,24 +11,23 @@ export default defineComponent({
   name: 'LanguageSelector',
 
   data: () => ({
-    items: [],
+    altLanguage: '',
   }),
+
   beforeMount() {
-    this.updateLocaleList();
+    this.setLanguageLabel();
   },
+
   methods: {
-    updateLocaleList() {
-      this.items = [];
-      this.$i18n.availableLocales.forEach((locale) => {
-        this.items.push({
-          title: this.$t(`languages.${locale}`, 0, { locale }),
-          value: locale,
-        });
-      });
+    setLanguageLabel() {
+      const altLocale = this.$i18n.locale === 'ca' ? 'es' : 'ca';
+      this.altLanguage = this.$t(`languages.${altLocale}`);
     },
-    changeLang(locale) {
-      this.$i18n.locale = locale;
-      this.$cookies.set('locale', locale);
+
+    switchLanguage() {
+      this.$i18n.locale = this.$i18n.locale === 'ca' ? 'es' : 'ca';
+      this.$cookies.set('locale', this.$i18n.locale);
+      this.setLanguageLabel();
     },
   },
 });
