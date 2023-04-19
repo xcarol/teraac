@@ -1,5 +1,5 @@
 <template>
-  <v-card :title="this.$t('legal.title')">
+  <v-card :title="$t('legal.title')">
     <div v-if="locale === 'ca'">
       <LegalCa />
     </div>

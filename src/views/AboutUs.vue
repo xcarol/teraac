@@ -1,5 +1,5 @@
 <template>
-  <v-card flat :title="this.$t('menu.about-us')">
+  <v-card flat :title="$t('menu.about-us')">
     <div v-if="locale === 'ca'">
       <AboutUsCa />
     </div>
@@ -19,6 +19,7 @@ export default {
   data: () => ({
     locale: 'ca',
   }),
+
   components: {
     AboutUsCa,
     AboutUsEs,

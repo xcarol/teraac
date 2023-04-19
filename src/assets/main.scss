@@ -92,6 +92,23 @@ a:hover {
   font-weight: 500 !important;
 }
 
+.contact-link {
+  @include link-style($link-style-color);
+
+  cursor: pointer;
+  margin-inline-start: 5px;
+  font-size: 14px;
+  font-weight: 400 !important;
+}
+
+.contact-link:hover {
+  @include link-style($link-style-color-hover);
+
+  margin-inline-start: 5px;
+  font-size: 14px;
+  font-weight: 400 !important;
+}
+
 .main-app-bar {
   z-index: 9999 !important;
   overflow: visible !important;

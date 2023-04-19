@@ -7,14 +7,16 @@
     "es": "Castellano"
   },
   "menu": {
-    "about-us": "Quienes somos"
+    "about-us": "Quienes somos",
+    "contact": "Contacto"
   },
   "contact": {
     "title": "CONTACTO",
     "street": "Calle Pompeu Fabra, 50",
     "city": "08922 Santa Coloma de Gramenet (Barcelona)",
-    "phone": "Tel: 93 386 12 68",
-    "fax": "Fax: 93 386 74 42"
+    "phone1": "93 386 12 68",
+    "phone2": "93 386 74 42",
+    "email": "info{'@'}teraac.com"
   },
   "legal": {
     "title": "AVISO LEGAL",
