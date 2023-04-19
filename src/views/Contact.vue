@@ -14,9 +14,13 @@
       </v-col>
       <v-col cols="12" sm="6">
         <v-card-text>
-          <v-map :zoom="15" center="{lat: 41.385064, lng: 2.173403}">
-            <v-marker :lat="41.385064" :lng="2.173403" />
-          </v-map>
+          <iframe
+            :src="mapurl"
+            width="100%" height="300" style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </v-card-text>
       </v-col>
     </v-row>
@@ -31,7 +35,11 @@ export default {
     mailto: '',
     phone1: '',
     phone2: '',
-    claveapi: 'AIzaSyD6M1Tylbc_0cx-DFHpSnxrrG8hCg6o_fI',
+    mapurl: 'https://www.google.com/maps/embed'
+            + '?pb=!1m18!1m12!1m3!1d1283.653473265026!2d2.2067561103365083'
+            + '!3d41.45030563810665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1'
+            + '!3m3!1m2!1s0x12a4bc928693d749%3A0x9d936eae07a496ff'
+            + '!2sBosch%20Car%20Service%20Teraac!5e0!3m2!1sca!2ses!4v1681918706980!5m2!1sca!2ses',
   }),
 
   beforeMount() {
