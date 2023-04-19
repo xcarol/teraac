@@ -6,15 +6,6 @@ import LanguageSelector from './LanguageSelector.vue';
 <template>
   <v-footer class="pa-0 flex-grow-0 flex-shrink-0">
     <v-row class="footer" no-gutters>
-      <v-col class="text-left mt-4" cols="12">
-        <div>
-          <b>{{ $t('contact.title') }}</b><br />
-          {{ $t('contact.street') }}<br />
-          {{ $t('contact.city') }}<br />
-          {{ $t('contact.phone') }}<br />
-          {{ $t('contact.fax') }}
-        </div>
-      </v-col>
       <v-col class="text-center mt-4 mb-4" cols="12" sm="11">
         <span>
           {{ $t('legal.copyright') }}
