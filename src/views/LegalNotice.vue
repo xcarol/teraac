@@ -1,6 +1,6 @@
 <template>
   <v-card :title="$t('legal.title')">
-    <div v-if="locale === 'ca'">
+    <div v-if="$cookies.get('locale') === 'ca'">
       <LegalCa />
     </div>
     <div v-else>
@@ -16,16 +16,9 @@ import LegalEs from '../components/LegalEs.vue';
 export default {
   name: 'LegalNotice',
 
-  data: () => ({
-    locale: 'ca',
-  }),
   components: {
     LegalCa,
     LegalEs,
-  },
-
-  beforeUpdate() {
-    this.locale = this.$cookies.get('locale');
   },
 };
 </script>
