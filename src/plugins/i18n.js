@@ -23,7 +23,7 @@ export function getBrowserLang() {
   return browserLocale;
 }
 
-const locale = getUserLanguage() || getBrowserLang() || import.meta.env.VUE_APP_I18N_LOCALE || 'ca';
+const locale = getUserLanguage() || getBrowserLang() || import.meta.env.VITE_I18N_LOCALE || 'ca';
 const i18n = createI18n({
   legacy: false,
   locale,

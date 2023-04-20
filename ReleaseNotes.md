@@ -1,5 +1,23 @@
 # Notes de la versió
 
+## 0.9.0
+
+* Eliminar el marge al voltant del peu
+* Mostrar l'avís legal sense obrir una nova pestanya
+* Posar TERAAC a la capçalera amb el text normal
+* Treure les dades de contacte del peu
+* Treure els Serveis (de moment)
+* Pàgina de Contacte
+  * Eliminar el fax
+  * Posar els dos números com a números de telèfon i que puguin trucar
+  * Afegir email i que pugui enviar
+  * Afegir el mapa
+* Opcions actuals del menú: Qui som & Contacte
+* Canviar l'idioma només tocant-lo
+* Posar "Qui som" i "Bosch Car Service" a la mateixa pàgina
+* Afegir la cookie d'analisi de Google
+* Actualitzar l'avís legal
+
 ## 0.1.0
 
 S'ha adaptat a l'ús des del mòbil

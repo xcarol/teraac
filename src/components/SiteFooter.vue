@@ -4,27 +4,17 @@ import LanguageSelector from './LanguageSelector.vue';
 </script>
 
 <template>
-  <v-footer>
-    <v-row class="footer" justify="center" no-gutters>
-      <v-col class="text-left mt-4" cols="12">
-        <div>
-          <b>{{ $t('contact.title') }}</b
-          ><br />
-          {{ $t('contact.street') }}<br />
-          {{ $t('contact.city') }}<br />
-          {{ $t('contact.phone') }}<br />
-          {{ $t('contact.fax') }}
-        </div>
-      </v-col>
-      <v-col class="text-center mt-4" cols="12" sm="11">
+  <v-footer class="pa-0 flex-grow-0 flex-shrink-0">
+    <v-row class="footer" no-gutters>
+      <v-col class="text-center mt-4 mb-4" cols="12" sm="10">
         <span>
           {{ $t('legal.copyright') }}
-          <a href="#/legal-notice" target="_blank">
-            {{ $t('legal.notice') }}
-          </a>
+          <router-link to="legal-notice">
+            {{ $t('legal.title') }}
+          </router-link>
         </span>
       </v-col>
-      <v-col class="text-center mt-4 like-link" cols="12" sm="1">
+      <v-col class="text-center mt-4 like-link" cols="12" sm="2">
         <LanguageSelector />
       </v-col>
     </v-row>
