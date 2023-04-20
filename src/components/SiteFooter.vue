@@ -10,7 +10,7 @@ import LanguageSelector from './LanguageSelector.vue';
         <span>
           {{ $t('legal.copyright') }}
           <router-link to="legal-notice">
-            {{ $t('legal.notice') }}
+            {{ $t('legal.title') }}
           </router-link>
         </span>
       </v-col>
