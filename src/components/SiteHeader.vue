@@ -17,7 +17,7 @@
         <v-spacer />
         <v-col class="flex-grow-0 flex-shrink-1 d-none d-sm-block">
           <div class="d-inline-block align-center" v-for="(item, index) in items" :key="index">
-            <router-link class="menu-link" :to="item.to">{{ $t(item.menu) }}</router-link>
+            <router-link class="menu-link" :to="{ name: item.to }">{{ $t(item.menu) }}</router-link>
           </div>
         </v-col>
       </v-row>
@@ -46,6 +46,7 @@ export default defineComponent({
     logoImg: Logo,
     drawer: false,
     items: [
+      { to: 'home', menu: 'menu.home' },
       { to: 'about', menu: 'menu.about-us' },
       { to: 'contact', menu: 'menu.contact' },
     ],
