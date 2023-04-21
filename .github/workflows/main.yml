@@ -13,6 +13,8 @@ jobs:
       with:
         node-version: 18
     - run: npm ci
+      env:
+        VITE_EMBEDDED_MAP: ${{ secrets.VITE_EMBEDDED_MAP }}
     - run: npm run build
     - name: Store production build
       uses: actions/upload-artifact@v3
@@ -55,7 +57,7 @@ jobs:
       uses: juliangruber/read-file-action@v1.1.6
       with:
         path: ./ReleaseNotes.md
-    - uses: dawidd6/action-send-mail@v3.1.0
+    - uses: dawidd6/action-send-mail@v3.7.1
       with:
         server_address: smtp.gmail.com
         server_port: 465
