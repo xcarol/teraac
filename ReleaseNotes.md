@@ -1,5 +1,12 @@
 # Notes de la versió
 
+## 0.9.1
+
+* Canviar la foto de la portada
+* Afegir botó d'inici
+* No es mostra el mapa
+* Corregit el problema del canvi d'idioma
+
 ## 0.9.0
 
 * Eliminar el marge al voltant del peu
