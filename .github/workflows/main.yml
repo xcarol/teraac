@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "27-mvp-fine-tuning" ]
 
 name: Build & Deploy
 jobs:
@@ -73,4 +73,4 @@ jobs:
           ${{ steps.read-file.outputs.content }}
 
           Salutacions!
-        to: xcarolr@gmail.com, info@teraac.com
+        to: xcarolr@gmail.com
