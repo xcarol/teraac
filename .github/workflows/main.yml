@@ -55,7 +55,7 @@ jobs:
       uses: juliangruber/read-file-action@v1.1.6
       with:
         path: ./ReleaseNotes.md
-    - uses: dawidd6/action-send-mail@v3.1.0
+    - uses: dawidd6/action-send-mail@v3.7.1
       with:
         server_address: smtp.gmail.com
         server_port: 465
