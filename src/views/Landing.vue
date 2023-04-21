@@ -2,7 +2,7 @@
   <v-container>
     <v-row justify="space-around">
       <v-col cols="12" sm="6">
-        <v-img :src="banner"></v-img>
+        <v-img class="elevation-10" :src="banner"></v-img>
       </v-col>
       <v-col cols="12" sm="6">
         <v-card flat>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import banner from '../assets/Porta-500x250.jpg';
+import banner from '../assets/landing-pic.jpeg';
 
 export default {
   name: 'LandingPage',

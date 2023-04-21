@@ -1,6 +1,6 @@
 <template>
   <v-card flat :title="$t('menu.about-us')">
-    <div v-if="locale === 'ca'">
+    <div v-if="getLocale() === 'ca'">
       <AboutUsCa />
     </div>
     <div v-else>
@@ -16,21 +16,15 @@ import AboutUsEs from '../components/AboutUsEs.vue';
 export default {
   name: 'AboutUs',
 
-  data: () => ({
-    locale: 'ca',
-  }),
-
   components: {
     AboutUsCa,
     AboutUsEs,
   },
 
-  beforeMount() {
-    this.locale = this.$cookies.get('locale');
-  },
-
-  beforeUpdate() {
-    this.locale = this.$cookies.get('locale');
+  methods: {
+    getLocale() {
+      return this.$cookies.get('locale') || this.$i18n.locale;
+    },
   },
 };
 </script>
