@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ "27-mvp-fine-tuning" ]
+    branches: [ "master" ]
 
 name: Build & Deploy
 jobs:
