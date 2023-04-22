@@ -16,6 +16,7 @@
         <v-card-text>
           <iframe
             :src="mapurl"
+            class="elevation-10"
             width="100%" height="300" style="border:0;"
             allowfullscreen=""
             loading="lazy"
@@ -42,7 +43,7 @@ export default {
     this.mailto = `mailto:${this.$t('contact.email')}`;
     this.phone1 = `tel:${this.$t('contact.phone1')}`;
     this.phone2 = `tel:${this.$t('contact.phone2')}`;
-    this.mapurl = import.meta.env.VITE_GOOGLE_API_KEY;
+    this.mapurl = import.meta.env.VITE_EMBEDDED_MAP;
   },
 };
 </script>
