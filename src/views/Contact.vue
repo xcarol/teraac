@@ -44,7 +44,6 @@ export default {
     this.phone1 = `tel:${this.$t('contact.phone1')}`;
     this.phone2 = `tel:${this.$t('contact.phone2')}`;
     this.mapurl = import.meta.env.VITE_EMBEDDED_MAP;
-    console.error(`*** mapurl: ${this.mapurl} ***`);
   },
 };
 </script>
