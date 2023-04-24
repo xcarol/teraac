@@ -45,3 +45,33 @@ jobs:
         password: ${{ secrets.ftp_password_prod }}
         local-dir: ./dist/
         server-dir: ./httpdocs/
+  email:
+    needs: deploy
+    name: Email
+    runs-on: ubuntu-latest
+    steps:
+    - name: Recover release notes
+      uses: actions/download-artifact@v3
+      with:
+        name: notes
+        path: ./
+    - name: Read release notes
+      id: read-file
+      uses: juliangruber/read-file-action@v1.1.6
+      with:
+        path: ./ReleaseNotes.md
+    - uses: dawidd6/action-send-mail@v3.7.1
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{ secrets.MY_EMAIL }}
+        password: ${{ secrets.MY_EMAIL_PASSWORD }}
+        subject: Nova versió de la web (PUBLICA)
+        from: xcarolr@gmail.com
+        body: |
+          Bones!
+
+          Hi ha una versió de la web pública: www.teraac.com
+          
+          Salutacions!
+        to: xcarolr@gmail.com
