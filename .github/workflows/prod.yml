@@ -44,3 +44,4 @@ jobs:
         username: teraac.com
         password: ${{ secrets.ftp_password_prod }}
         local-dir: ./dist/
+        server-dir: ./httpdocs/
