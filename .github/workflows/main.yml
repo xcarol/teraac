@@ -65,12 +65,14 @@ jobs:
         server_port: 465
         username: ${{ secrets.MY_EMAIL }}
         password: ${{ secrets.MY_EMAIL_PASSWORD }}
-        subject: Nova versió de la web
+        subject: Nova versió de la web (DE PROVES)
         from: xcarolr@gmail.com
         body: |
           Bones,
 
-          Hi ha una versió de la web. Aquests són els canvis:
+          Hi ha una versió de la web de proves: teraac.xicra.com
+          
+          Aquests són els canvis:
           
           ${{ steps.read-file.outputs.content }}
 
