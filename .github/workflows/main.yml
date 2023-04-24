@@ -2,7 +2,7 @@ on:
   push:
     branches: [ "master" ]
 
-name: Build & Deploy
+name: Build & Deploy to Stage
 jobs:
   build:
     name: Build
