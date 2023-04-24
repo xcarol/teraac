@@ -1,5 +1,9 @@
 # Notes de la versió
 
+## 1.0.0
+
+* Canviar a la web pública
+
 ## 0.9.1
 
 * Canviar la foto de la portada
