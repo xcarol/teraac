@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ "master32-move-to-production" ]
+    branches: [ "32-move-to-production" ]
 
 name: Build & Deploy to Production
 jobs:
