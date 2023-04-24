@@ -1,0 +1,46 @@
+on:
+  push:
+    branches: [ "master32-move-to-production" ]
+
+name: Build & Deploy
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18
+    - name: Install
+      run: npm ci
+    - name: Build
+      env: 
+        VITE_EMBEDDED_MAP: '${{ secrets.VITE_EMBEDDED_MAP }}'
+      run: npm run build
+    - name: Store production build
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist
+        path: ./dist/
+    - name: Store release notes
+      uses: actions/upload-artifact@v3
+      with:
+        name: notes
+        path: ./ReleaseNotes.md
+  deploy:
+    needs: build
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Recover production build
+      uses: actions/download-artifact@v3
+      with:
+        name: dist
+        path: ./dist/
+    - uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: 91.142.223.178
+        username: teraac.com
+        password: ${{ secrets.ftp_password_prod }}
+        local-dir: ./dist/
