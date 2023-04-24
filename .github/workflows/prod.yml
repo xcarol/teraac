@@ -1,6 +1,7 @@
 on:
   push:
-    branches: [ "32-move-to-production" ]
+    tags:
+    - '**'
 
 name: Build & Deploy to Production
 jobs:
