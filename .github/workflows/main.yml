@@ -75,4 +75,4 @@ jobs:
           ${{ steps.read-file.outputs.content }}
 
           Salutacions!
-        to: xcarolr@gmail.com, info@teraac.com
+        to: xcarolr@gmail.com
