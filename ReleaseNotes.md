@@ -1,5 +1,9 @@
 # Notes de la versió
 
+## 1.0.1
+
+* Afegir l'horari a la pàgina de contacte
+
 ## 1.0.0
 
 * Canviar a la web pública

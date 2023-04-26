@@ -4,12 +4,16 @@
       <v-col cols="12" sm="6">
         <v-card-text>
           <v-icon icon="mdi-home"></v-icon> {{ $t('contact.street') }}<br />
-          <v-icon></v-icon> {{ $t('contact.city') }}<br />
+          <div class="text-sota">{{ $t('contact.city') }}</div><br />
           <v-icon icon="mdi-phone"></v-icon>
           <a class="contact-link" :href="phone1">{{ $t('contact.phone1') }}</a> -
           <a class="contact-link" :href="phone2">{{ $t('contact.phone2') }}</a><br />
           <v-icon icon="mdi-email"></v-icon>
-          <a class="contact-link" :href="mailto" target="_blank">{{ $t('contact.email') }}</a><br />
+          <a class="contact-link" :href="mailto" target="_blank">{{ $t('contact.email') }}</a>
+          <br /><br />
+          <v-icon icon="mdi-timetable"></v-icon> <b>{{ $t('timetable.title') }}</b><br />
+          <div class="text-sota"> {{ $t('timetable.week') }}</div><br />
+          <div class="text-sota"> {{ $t('timetable.weekend') }}</div><br />
         </v-card-text>
       </v-col>
       <v-col cols="12" sm="6">
@@ -47,3 +51,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.text-sota {
+  margin-left: 26px;
+  display: inline-block;
+  word-wrap: break-word;
+}
+</style>

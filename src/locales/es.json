@@ -18,6 +18,11 @@
     "phone2": "93 386 74 42",
     "email": "info{'@'}teraac.com"
   },
+  "timetable": {
+    "title": "HORARIO",
+    "week": "Lunes a Viernes de 8:00 a 13:00 y 15:00 a 19:00",
+    "weekend": "Sabado y Domingo cerrado"
+  },
   "legal": {
     "title": "AVISO LEGAL",
     "copyright": "© Teraac Bosch Car Service S.L. 2023. Todos los derechos reservados.",
