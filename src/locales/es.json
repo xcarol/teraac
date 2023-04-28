@@ -7,6 +7,7 @@
   },
   "menu": {
     "home": "Inicio",
+    "contributions": "Colaboraciones",
     "about-us": "Quienes somos",
     "contact": "Contacto"
   },
@@ -31,6 +32,12 @@
   "landing-page": {
     "title": "Teraac Bosch Car Service",
     "description": "Teraac se caracteriza por ser una empresa que esta provista de los últimos equipamientos en materia de diagnóstico y reparación de las averias del automóvil."
+  },
+  "contributions": {
+    "title": "Teraac colabora con empresas de reconocido prestigio",
+    "description1": "Teraac colabora con distintas empresas del sector de la automoción: recambios de automóvil, accesorios y productos electrónicos para el vehículo, etc.",
+    "description2": "Con esto, nos aseguramos de que disfrutes de una conducción aún más segura y confortable, al relacionarnos con las empresas punteras del mercado para estar siempre a la vanguardia de las últimas novedades y ofrecerte lo mejor.",
+    "companies": "Empresas colaboradoras"
   },
   "service-linia-pre-itv": {
     "title": "LINEA PRE ITV",
