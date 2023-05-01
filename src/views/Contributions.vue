@@ -7,8 +7,8 @@
       <v-card-title class="landing-title">{{ $t('contributions.companies') }}</v-card-title>
       <v-row dense>
         <v-col cols="6" sm="4" md="2" v-for="(company, index) in companies" :key="index">
-          <v-card>
-            <v-img :src="company"></v-img>
+          <v-card class="ma-2 elevation-8">
+            <v-img class="ma-5" :src="company"></v-img>
           </v-card>
         </v-col>
       </v-row>
@@ -24,7 +24,7 @@ import detector from '../assets/companies/4detector.jpg';
 import racc from '../assets/companies/5racc.jpg';
 import adac from '../assets/companies/6adac.jpg';
 import race from '../assets/companies/7race.jpg';
-import autoclub from '../assets/companies/8autoclub.png';
+import autoclub from '../assets/companies/8autoclub.jpg';
 import mapfre from '../assets/companies/9 mapfre.jpg';
 import cea from '../assets/companies/10cea.jpg';
 
