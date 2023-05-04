@@ -1,5 +1,11 @@
 # Notes de la versió
 
+## 1.1.0
+
+* Afegir les col·laboracions
+  * Empreses
+  * Marques
+
 ## 1.0.1
 
 * Afegir l'horari a la pàgina de contacte

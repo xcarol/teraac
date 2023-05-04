@@ -14,6 +14,11 @@ const router = createRouter({
       component: () => import('../views/LegalNotice.vue'),
     },
     {
+      path: '/contributions',
+      name: 'contributions',
+      component: () => import('../views/Contributions.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutUs.vue'),

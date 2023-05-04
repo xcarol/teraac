@@ -47,6 +47,7 @@ export default defineComponent({
     drawer: false,
     items: [
       { to: 'home', menu: 'menu.home' },
+      { to: 'contributions', menu: 'menu.contributions' },
       { to: 'about', menu: 'menu.about-us' },
       { to: 'contact', menu: 'menu.contact' },
     ],
