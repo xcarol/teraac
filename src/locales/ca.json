@@ -37,7 +37,30 @@
     "title": "Teraac col·labora amb empreses de prestigi reconegut",
     "description1": "Teraac col·labora amb diferents empreses del sector de l'automoció: recanvis de l'automòbil, accesoris i productes electrònics per al vehícle, etc.",
     "description2": "Amb això, ens asegurem que gaudeixis d'una conducció encara més segura i comfortable, al relacionar-nos amb les empreses punteres del mercat per estar sempre a la vanguarda de les últimes novetats i oferir-te el millor.",
-    "companies": "Empreses col·laboradoras"
+    "companies": "Empreses col·laboradoras",
+    "brands": "Marques"
+  },
+  "brands": {
+    "alpine": "Auto-ràdios Hifi Navegació",
+    "aragon": "Enganxaments i remolcs",
+    "audison": "Amplificadors i altaveus d'alta fidelitat",
+    "blaupunkt": "Auto-ràdios Hifi Navegació",
+    "boschb": "Bosch Car Service. Qualitat, Preu i tots els serveis",
+    "detector": "Localitzador vehicles robats",
+    "diavia": "Aire condicionat equips i recanvis",
+    "dirna": "Aire condicionat equips i recanvis",
+    "dometic": "Accessoris elèctrics generadors",
+    "dunlop": "Pneumàtics",
+    "gemini": "Alarmes i localitzadors",
+    "goodyear": "Pneumàtics",
+    "hertz": "Amplificadors i altaveus d'alta fidelitat",
+    "kenwood": "Auto-ràdios Hifi Navegació",
+    "monroe": "Suspensions",
+    "parrot": "Kit mans lliures",
+    "tomtom": "Navegadors",
+    "valvoline": "Oli sintètic amb les normatives de tots els fabricants",
+    "waeco": "Aire condicionat, reguladors de velocitat, retrocàmera",
+    "webasto": "Calefaccions autònomes de gasoil"
   },
   "service-linia-pre-itv": {
     "title": "LÍNIA PRE ITV",

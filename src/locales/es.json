@@ -37,7 +37,30 @@
     "title": "Teraac colabora con empresas de reconocido prestigio",
     "description1": "Teraac colabora con distintas empresas del sector de la automoción: recambios de automóvil, accesorios y productos electrónicos para el vehículo, etc.",
     "description2": "Con esto, nos aseguramos de que disfrutes de una conducción aún más segura y confortable, al relacionarnos con las empresas punteras del mercado para estar siempre a la vanguardia de las últimas novedades y ofrecerte lo mejor.",
-    "companies": "Empresas colaboradoras"
+    "companies": "Empresas colaboradoras",
+    "brands": "Marcas"
+  },
+  "brands": {
+    "alpine": "Auto-radios Hifi Navegación",
+    "aragon": "Enganches y remolques",
+    "audison": "Amplificadores y altavoces de alta fidelidad",
+    "blaupunkt": "Auto-radios Hifi Navegación",
+    "boschb": "Bosch Car Service. Calidad, Precio y todos los servicios",
+    "detector": "Localizador vehículos robados",
+    "diavia": "Aire acondicionado equipos y recambios",
+    "dirna": "Aire acondicionado equipos y recambios",
+    "dometic": "Accesorios eléctricos generadores",
+    "dunlop": "Neumáticos",
+    "gemini": "Alarmas y localizadores",
+    "goodyear": "Neumáticos",
+    "hertz": "Amplificadores y altavoces de alta fidelidad",
+    "kenwood": "Auto-radios Hifi Navegación",
+    "monroe": "Suspensiones",
+    "parrot": "Kit manos libres",
+    "tomtom": "Navegadores",
+    "valvoline": "Aceite sintético con las normativas de todos los fabricantes",
+    "waeco": "Aire acondicionado, reguladores de velocidad, retrocámara",
+    "webasto": "Calefacciones autónomas de gasoil"
   },
   "service-linia-pre-itv": {
     "title": "LINEA PRE ITV",
