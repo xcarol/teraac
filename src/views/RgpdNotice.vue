@@ -1,24 +1,24 @@
 <template>
-  <v-card :title="$t('grdp.title')">
+  <v-card :title="$t('rgpd.title')">
     <div v-if="getLocale() === 'ca'">
-      <GrdpCa />
+      <RgpdCa />
     </div>
     <div v-else>
-      <GrdpEs />
+      <RgpdEs />
     </div>
   </v-card>
 </template>
 
 <script>
-import GrdpCa from '../components/GrdpCa.vue';
-import GrdpEs from '../components/GrdpEs.vue';
+import RgpdCa from '../components/RgpdCa.vue';
+import RgpdEs from '../components/RgpdEs.vue';
 
 export default {
-  name: 'GrdpNotice',
+  name: 'RgpdNotice',
 
   components: {
-    GrdpCa,
-    GrdpEs,
+    RgpdCa,
+    RgpdEs,
   },
 
   methods: {
