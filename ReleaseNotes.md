@@ -1,5 +1,9 @@
 # Notes de la versió
 
+## 1.2.0
+
+* Afegir RGPD
+
 ## 1.1.0
 
 * Afegir les col·laboracions
