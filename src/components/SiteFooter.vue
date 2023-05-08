@@ -12,6 +12,10 @@ import LanguageSelector from './LanguageSelector.vue';
           <router-link to="legal-notice">
             {{ $t('legal.title') }}
           </router-link>
+          -
+          <router-link to="grdp-notice">
+            {{ $t('legal.grdp') }}
+          </router-link>
         </span>
       </v-col>
       <v-col class="text-center mt-4 like-link" cols="12" sm="2">

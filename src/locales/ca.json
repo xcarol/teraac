@@ -26,6 +26,7 @@
   },
   "legal": {
     "title": "AVÍS LEGAL",
+    "grdp": "RGPD",
     "copyright": "© Teraac Bosch Car Service S.L. 2023. Tots els drets reservats.",
     "cookie-notice": "Aquest lloc web utilitza cookies. Ves a {0} per obtenir-ne els detalls."
   },
@@ -61,6 +62,9 @@
     "valvoline": "Oli sintètic amb les normatives de tots els fabricants",
     "waeco": "Aire condicionat, reguladors de velocitat, retrocàmera",
     "webasto": "Calefaccions autònomes de gasoil"
+  },
+  "grdp": {
+    "title": "Clàusules informatives de protecció de dades (RGPD / LOPDGDD)"
   },
   "service-linia-pre-itv": {
     "title": "LÍNIA PRE ITV",
