@@ -13,8 +13,8 @@ import LanguageSelector from './LanguageSelector.vue';
             {{ $t('legal.title') }}
           </router-link>
           -
-          <router-link to="grdp-notice">
-            {{ $t('legal.grdp') }}
+          <router-link to="rgpd-notice">
+            {{ $t('legal.rgpd') }}
           </router-link>
         </span>
       </v-col>
