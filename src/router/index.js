@@ -14,6 +14,11 @@ const router = createRouter({
       component: () => import('../views/LegalNotice.vue'),
     },
     {
+      path: '/grdp-notice',
+      name: 'grdp',
+      component: () => import('../views/GrdpNotice.vue'),
+    },
+    {
       path: '/contributions',
       name: 'contributions',
       component: () => import('../views/Contributions.vue'),
