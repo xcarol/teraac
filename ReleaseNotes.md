@@ -1,5 +1,9 @@
 # Notes de la versió
 
+## 1.3.0
+
+* Afegir consells útils
+
 ## 1.2.0
 
 * Afegir RGPD
