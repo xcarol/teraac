@@ -6,8 +6,8 @@
       </v-col>
       <v-col cols="12" sm="6">
         <v-card flat>
-          <v-card-title class="brand-title">{{ $t('landing-page.title') }}</v-card-title>
-          <v-card-text class="brand-text">{{ $t('landing-page.description') }}</v-card-text>
+          <v-card-title class="company-title">{{ $t('landing-page.title') }}</v-card-title>
+          <v-card-text class="company-title">{{ $t('landing-page.description') }}</v-card-text>
         </v-card>
       </v-col>
     </v-row>
