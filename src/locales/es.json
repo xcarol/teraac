@@ -8,7 +8,8 @@
   "menu": {
     "home": "Inicio",
     "contributions": "Colaboraciones",
-    "about-us": "Quienes somos",
+    "advices": "Consejos útiles",
+    "aboutus": "Quienes somos",
     "contact": "Contacto"
   },
   "contact": {
@@ -65,6 +66,29 @@
   },
   "rgpd": {
     "title": "Cláusulas informativas de Protección de Datos (RGPD / LOPDGDD)"
+  },
+  "advices": {
+    "title": "Teraac Bosch Car Service Resumen de la guía",
+    "winter": {
+      "title": "Invierno",
+      "description": "Nuestra Guía de invierno contiene información importante y valiosos consejos sobre cómo conducir en invierno para asegurarte llegar a tu destino sin incidentes."
+    },
+    "tyres": {
+      "title": "Neumáticos",
+      "description": "¿Qué elementos tienes que tener en cuenta con respecto a la limpieza, almacenamiento y cambio de neumáticos? Nuestra Guía de Neumáticos contiene información importante y valiosos consejos para no perder nunca el agarre."
+    },
+    "battery": {
+      "title": "Batería",
+      "description": "La causa más frecuente de las averías de vehículos es una batería defectuosa. Nuestra Guía de Baterías contiene información importante sobre cómo puedes ayudar a tu batería, cómo alargar su vida útil, y otros muchos consejos."
+    },
+    "holiday": {
+      "title": "Vacaciones",
+      "description": "¡Por fin vacaciones! Pero el viaje puede ser duro para tu coche. Nuestra Guía de Vacaciones explica los puntos que debes tener en cuenta antes de empezar el viaje y durante el mismo."
+    },
+    "lights": {
+      "title": "Luces y visión",
+      "description": "Nuestra Guía de Luces y Visión contiene todo lo que necesitas saber sobre luces y visibilidad óptima en carretera, desde el ajuste de los faros y el cambio de las bombillas hasta la elección de los limpiaparabrisas adecuado."
+    }
   },
   "service-linia-pre-itv": {
     "title": "LINEA PRE ITV",

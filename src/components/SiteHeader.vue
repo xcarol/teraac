@@ -48,7 +48,8 @@ export default defineComponent({
     items: [
       { to: 'home', menu: 'menu.home' },
       { to: 'contributions', menu: 'menu.contributions' },
-      { to: 'about', menu: 'menu.about-us' },
+      { to: 'advices', menu: 'menu.advices' },
+      { to: 'about', menu: 'menu.aboutus' },
       { to: 'contact', menu: 'menu.contact' },
     ],
   }),
