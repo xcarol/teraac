@@ -1,10 +1,10 @@
 <template>
   <v-card flat>
-    <v-card-title class="landing-title">{{ $t('contributions.title') }}</v-card-title>
-    <v-card-text class="landing-text">{{ $t('contributions.description1') }}</v-card-text>
-    <v-card-text class="landing-text">{{ $t('contributions.description2') }}</v-card-text>
+    <v-card-title class="brand-title">{{ $t('contributions.title') }}</v-card-title>
+    <v-card-text class="brand-text">{{ $t('contributions.description1') }}</v-card-text>
+    <v-card-text class="brand-text">{{ $t('contributions.description2') }}</v-card-text>
     <v-card>
-      <v-card-title class="landing-title">{{ $t('contributions.companies') }}</v-card-title>
+      <v-card-title class="brand-title">{{ $t('contributions.companies') }}</v-card-title>
       <v-row dense>
         <v-col cols="6" sm="4" md="2" v-for="(company, index) in companies" :key="index">
           <v-card class="ma-2 elevation-8">
@@ -14,7 +14,7 @@
       </v-row>
     </v-card>
     <v-card>
-      <v-card-title class="landing-title">{{ $t('contributions.brands') }}</v-card-title>
+      <v-card-title class="brand-title">{{ $t('contributions.brands') }}</v-card-title>
       <v-row dense>
         <v-col cols="6" sm="4" md="2" v-for="(brand, index) in brands" :key="index">
           <v-card class="ma-2 elevation-8 brand-card">
