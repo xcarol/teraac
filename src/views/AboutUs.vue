@@ -1,5 +1,5 @@
 <template>
-  <v-card flat :title="$t('menu.about-us')">
+  <v-card flat :title="$t('menu.aboutus')">
     <div v-if="getLocale() === 'ca'">
       <AboutUsCa />
     </div>

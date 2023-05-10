@@ -8,7 +8,8 @@
   "menu": {
     "home": "Inici",
     "contributions": "Col·laboracions",
-    "about-us": "Qui som",
+    "advices": "Consells útils",
+    "aboutus": "Qui som",
     "contact": "Contacte"
   },
   "contact": {
@@ -65,6 +66,29 @@
   },
   "rgpd": {
     "title": "Clàusules informatives de protecció de dades (RGPD / LOPDGDD)"
+  },
+  "advices": {
+    "title": "Teraac Bosch Car Service Resum de la guia",
+    "winter": {
+      "title": "Hivern",
+      "description": "La nostra Guia d'hivern conté informació important i valuosos consells sobre com conduir a l'hivern per assegurar-vos que arribeu a la vostra destinació sense incidents."
+    },
+    "tyres": {
+      "title": "Pneumàtics",
+      "description": "Quins elements has de tenir en compte pel que fa a la neteja, emmagatzematge i canvi de pneumàtics? La nostra Guia de Pneumàtics conté informació important i valuosos consells per no perdre mai l'adherència."
+    },
+    "battery": {
+      "title": "Bateria",
+      "description": "La causa més freqüent de les avaries de vehicles és una bateria defectuosa. La nostra Guia de Bateries conté informació important sobre com pots ajudar la teva bateria, com allargar la seva vida útil, i molts altres consells."
+    },
+    "holiday": {
+      "title": "Vacances",
+      "description": "Per fi vacances! Però el viatge pot ser dur per al teu cotxe. La nostra Guia de Vacances explica els punts que has de tenir en compte abans de començar el viatge i durant el mateix."
+    },
+    "lights": {
+      "title": "Llums i visió",
+      "description": "La nostra Guia de Llums i Visió conté tot el que necessites saber sobre llums i visibilitat òptima a la carretera, des de l'ajust dels fars i el canvi de les bombetes fins a l'elecció dels eixugaparabrises adequat."
+    }
   },
   "service-linia-pre-itv": {
     "title": "LÍNIA PRE ITV",

@@ -1,8 +1,8 @@
 <template>
   <v-card flat>
     <v-card-title class="company-title">{{ $t('contributions.title') }}</v-card-title>
-    <v-card-text class="company-title">{{ $t('contributions.description1') }}</v-card-text>
-    <v-card-text class="company-title">{{ $t('contributions.description2') }}</v-card-text>
+    <v-card-text class="company-text">{{ $t('contributions.description1') }}</v-card-text>
+    <v-card-text class="company-text">{{ $t('contributions.description2') }}</v-card-text>
     <v-card>
       <v-card-title class="company-title">{{ $t('contributions.companies') }}</v-card-title>
       <v-row dense>
@@ -17,9 +17,9 @@
       <v-card-title class="company-title">{{ $t('contributions.brands') }}</v-card-title>
       <v-row dense>
         <v-col cols="6" sm="4" md="2" v-for="(brand, index) in brands" :key="index">
-          <v-card class="ma-2 elevation-8 brand-card">
+          <v-card class="ma-2 elevation-8 custom-v-card">
             <v-img class="ma-5" :src="brand.logo"></v-img>
-            <v-card-text class="text-center brand-text">{{ $t(`brands.${brand.name}`) }}</v-card-text>
+            <v-card-text class="text-center custom-v-card-text">{{ $t(`brands.${brand.name}`) }}</v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -98,13 +98,3 @@ export default {
   }),
 };
 </script>
-
-<style scoped>
-.brand-card {
-  height: 90%;
-}
-
-.brand-text {
-  padding-bottom: 3rem !important;
-}
-</style>
