@@ -15,7 +15,7 @@
     </v-card>
     <v-card>
       <v-card-title class="company-title">{{ $t('contributions.brands') }}</v-card-title>
-      <v-row dense>
+      <v-row dense class="custom-v-row">
         <v-col cols="6" sm="4" md="2" v-for="(brand, index) in brands" :key="index">
           <v-card class="ma-2 elevation-8 custom-v-card">
             <v-img class="ma-5" :src="brand.logo"></v-img>
