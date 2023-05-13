@@ -32,7 +32,7 @@ export default {
 
   data: () => ({
     advices: [
-      { name: 'battery', image: battery },
+      { name: 'battery', image: battery, page: 'battery' },
       { name: 'holiday', image: holiday },
       { name: 'lights', image: lights },
       { name: 'tyres', image: tyres },
