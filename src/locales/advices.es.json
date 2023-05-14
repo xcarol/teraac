@@ -1,0 +1,69 @@
+{
+  "battery": {
+    "title": "Consejos sobre baterías",
+    "p1": {
+      "title": "¿Cuáles son los puntos que se deben tener en cuenta al comprar una batería?",
+      "text1": "El número creciente de equipos electrónicos en coches y las nuevas tecnologías como los sistemas de Start/Stop o frenado con recuperación de energía, requieren baterías de alto rendimiento. Las fuentes de energía convencionales, por ejemplo, se sobrecargan pronto con el arranque frecuente del motor.",
+      "text2": "Por el contrario, modelos de batería especiales como el S6 AGM y el S5 EFB de Bosch ofrecen mucha más potencia y pueden resistir un mayor número de ciclos de carga. Los profesionales de Teraac Bosch Car Service estarán encantados de ofrecerte información adicional, ya que la batería más barata no es siempre la mejor opción. También es conveniente recordar que, por motivos de seguridad, las baterías colocadas en el habitáculo del vehículo deben estar a prueba de explosiones."
+    },
+    "p2": {
+      "title": "¿Por qué es tan importante comprobar la batería?",
+      "text1": "¿Conoces el estado actual de tu batería? La mayoría de los conductores no le presta atención hasta que tienen una avería o su coche no arranca. La mejor solución es realizar una comprobación frecuente de la batería en Teraac Bosch Car Service. Parece más lógico pasar unos minutos en el taller que esperar durante horas a que aparezca el servicio de averías.",
+      "text2": "También puedes hacer esta comprobación de la batería tú mismo con el cargador de batería C3 o C7 de Bosch. Esto garantiza que la batería siempre esté a punto y completamente cargada: es rápido, fácil y sin ningún riesgo. Con el cargador C7 incluso es posible recargar totalmente baterías descargadas con solo apretar un botón."
+    },
+    "p3": {
+      "title": "¿Cuál es la primera causa de averías?",
+      "text1": "¿Sabías que 1 de cada 3 averías se debe a una batería defectuosa? Pero el problema no es siempre la propia batería, hay otros componentes que también pueden ser la causa del fallo. En otras palabras: si tu vehículo no arranca, no se solucionará el problema solo con sustituir la batería. Por lo tanto, es aconsejable buscar otras posibles causas para evitar tener que hacer otra visita al taller y así ahorrar tiempo, dinero y molestias."
+    },
+    "p4": {
+      "title": "¿Cuáles son las causas de fallos más habituales?",
+      "text1": "Además de un tiempo de almacenamiento excesivo, uno de los motivos principales del fallo de la batería es lo que se conoce como descarga total. En este proceso se agota la capacidad total de una sola vez. El daño de la batería cuando se produce esto puede ser considerable, dependiendo del periodo de tiempo que no se haya conducido el vehículo. Consecuencias: pérdida de potencia, imposibilidad de recarga, reducción importante de la vida útil."
+    },
+    "p5": {
+      "title": "¿Por qué se producen problemas especialmente en invierno?",
+      "text1": "Quizás te sorprenda saber que a las baterías les gusta el frío. Durante el calor del verano la abrasión es mucho más alta que en los meses de invierno; sin embargo, debido al aceite viscoso y frío del motor, la batería tiene que superar mayores exigencias que desencadenan en fallos."
+    },
+    "p6": {
+      "title": "10 motivos por los que se descarga la batería: ",
+      "text1": "1) Cortocircuito en el sistema eléctrico.",
+      "text2": "Si se produce un cortocircuito se extrae una cantidad de corriente considerable de la batería en muy poco tiempo y se convierte en calor.",
+      "text3": "2) Dejar las luces del vehículo encendidas.",
+      "text4": "Las luces del vehículo consumen mucha potencia y deberían quedar apagadas cuando el vehículo esté aparcado.",
+      "text5": "3) Calefacción auxiliar",
+      "text6": "Si la calefacción auxiliar no está apagada en caso de que la tensión sea insuficiente, la batería se descargará completamente. Esto también sucederá si la batería utilizada es demasiado pequeña.",
+      "text7": "4) Alternador defectuoso",
+      "text8": "Si el alternador no carga la batería durante la conducción, esta es la única fuente de alimentación de las unidades de control y otros equipos eléctricos, hasta que se descargue completamente.",
+      "text9": "5) Regulador del alternador defectuoso",
+      "text10": "Si el regulador del alternador es defectuoso se producirá una descarga completa debido a una carga inadecuada de la batería o un exceso de carga.",
+      "text11": "6) Fallo en la unidad de control",
+      "text12": "Si no se cierran las unidades de control cuando se apaga el motor seguirán usando la potencia y, por lo tanto, provocarán que la batería se descargue completamente.",
+      "text13": "7) Montaje de equipos eléctricos",
+      "text14": "Los equipos eléctricos adicionales, como el sistema calefactor de asientos, generalmente consumen potencia a través de la toma de mechero y provocan una rápida descarga de la batería.",
+      "text15": "8) Instalación de una batería incorrecta.",
+      "text16": "Las baterías defectuosas se deberían sustituir siempre por una del mismo tipo para no acortar la vida útil.",
+      "text17": "9) Trayectos cortos",
+      "text18": "En los trayectos cortos la cantidad de potencia consumida es superior a la que puede proporcionar el alternador. Por lo tanto, es preferible no utilizar equipos innecesarios (calefactor de asientos, radio, etc.) en invierno.",
+      "text19": "10) Radio, TV, DVD, neveras.",
+      "text20": "Las radios, los sistemas de navegación y otros dispositivos de entretenimiento utilizan mucha potencia y provocarán una descarga completa de la batería si esta no se recarga suficientemente."
+    },
+    "p7": {
+      "title": "¿Cómo puedes ayudar a tu batería?",
+      "text1": "Los cargadores de batería C3 y C7 de Bosch devuelven la vida a las baterías de manera rápida y cómoda. El cargador C7 puede incluso recargar totalmente sin esfuerzo baterías descargadas. Para que puedas pasar el invierno sin ningún problema. Puedes encontrar más información sobre cargadores de batería de Bosch, accesorios útiles y baterías de coches en: Sitio web de cargadores de baterías."
+    },
+    "p8": {
+      "title": "¿Es seguro recargar baterías?",
+      "text1": "¡No hay de qué preocuparse! El sistema de carga electrónica de los cargadores de baterías C3 y C7 Bosch, comprueban automáticamente la carga que necesita o puede aceptar de verdad la batería de tu coche, con independencia del tipo de batería de qué se trate. Pero recargarla es totalmente seguro en cualquier caso: al tratarse de una operación que consiste en pulsar un botón, un uso incorrecto es casi imposible y los terminales permanecen sin energía si no están conectados a los conectores o lo están de manera incorrecta. Esto significa que puedes cargar la batería de tu coche sin ningún riesgo y, de ser necesario, sin tener que sacarla del vehículo."
+    },
+    "p9": {
+      "title": "8 maneras de ampliar la vida útil",
+      "text1": "1) Comprueba periódicamente la tensión, el nivel de carga y la potencia de arranque de la batería, así como la pérdida de potencia en el coche.",
+      "text2": "2) Es recomendable sacar la batería antes de dejar un coche fuera de servicio durante el invierno. Nuestro consejo: guárdala en un lugar fresco.",
+      "text3": "3) Inspecciona la batería al menos 2 veces al año, una vez al mes en invierno (en caso de heladas) si se trata de baterías más viejas.",
+      "text4": "4) Comprueba que la batería está colocada firmemente en el compartimento de la batería y que las partes metálicas de la batería están engrasadas y los terminales asegurados con firmeza.",
+      "text5": "5) Cuando sea posible, evita la descarga completa de la batería (producida, por ejemplo, al dejar las luces encendidas).",
+      "text6": "6) Pisa el embrague al arrancar el vehículo para reducir la resistencia de arranque y así el consumo de potencia.",
+      "text7": "7) Apaga todo el equipo innecesario como la radio, el aire acondicionado o el calentador del motor auxiliar antes de arrancar.",
+      "text8": "8) Después de un largo periodo de inactividad, saca la batería y conéctala a un cargador controlado electrónicamente."
+    }
+  }
+}
