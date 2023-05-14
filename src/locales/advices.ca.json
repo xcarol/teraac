@@ -1,0 +1,69 @@
+{
+  "battery": {
+    "title": "Consells sobre bateries",
+    "p1": {
+      "title": "Quins són els punts que cal tenir en compte en comprar una bateria?",
+      "text1": "El nombre creixent d'equips electrònics en cotxes i les noves tecnologies com els sistemes de Start/Stop o frenada amb recuperació d'energia, requereixen bateries d'alt rendiment. Les fonts d'energia convencionals, per exemple, se sobrecarreguen aviat amb l'arrencada freqüent del motor.",
+      "text2": "Per contra, models de bateria especials com el S6 AGM i l'S5 EFB de Bosch ofereixen molta més potència i poden resistir un major nombre de cicles de càrrega. Els professionals de Teraac Bosch Car Service estaran encantats d'oferir-te informació addicional, ja que la bateria més barata no és sempre la millor opció, també cal recordar que, per motius de seguretat, les bateries col·locades a l'habitacle del vehicle han d'estar a prova d'explosions."
+    },
+    "p2": {
+      "title": "Per què és tan important comprovar la bateria?",
+      "text1": "Coneixes l'estat actual de la teva bateria? La majoria dels conductors no li paren atenció fins que tenen una avaria o el cotxe no arrenca. La millor solució és realitzar una comprovació freqüent de la bateria a Teraac Bosch Car Service. Sembla més lògic passar uns minuts al taller que esperar durant hores que aparegui el servei d'avaries.",
+      "text2": "També pots fer aquesta comprovació de la bateria tu mateix amb el carregador de bateria C3 o C7 de Bosch. Això garanteix que la bateria sempre estigui a punt i completament carregada: és ràpid, fàcil i sense cap risc. Amb el carregador C7 fins i tot és possible recarregar totalment bateries descarregades amb només prémer un botó."
+    },
+    "p3": {
+      "title": "Quina és la primera causa d'avaries?",
+      "text1": "Sabies que 1 de cada 3 avaries es deu a una bateria defectuosa? Però el problema no és sempre la pròpia bateria, hi ha altres components que també poden ser la causa de la fallada. En altres paraules: si el teu vehicle no arrenca, no se solucionarà el problema només amb substituir la bateria. Per tant, és aconsellable buscar altres possibles causes per evitar haver de fer una altra visita al taller i així estalviar temps, diners i molèsties."
+    },
+    "p4": {
+      "title": "Quines són les causes de fallades més habituals?",
+      "text1": "A més d'un temps d'emmagatzematge excessiu, un dels motius principals de la fallada de la bateria és el que es coneix com a descàrrega total. En aquest procés s'esgota la capacitat total d'una sola vegada. El dany de la bateria quan es produeix això pot ser considerable, depenent del període de temps que no s'hagi conduït el vehicle. Conseqüències: pèrdua de potència, impossibilitat de recàrrega, reducció important de la vida útil."
+    },
+    "p5": {
+      "title": "Per què es produeixen problemes especialment a l'hivern?",
+      "text1": "Potser et sorprendrà saber que a les bateries els agrada el fred. Durant la calor de l'estiu l'abrasió és molt més alta que els mesos d'hivern; no obstant això, a causa de l'oli viscós i fred del motor, la bateria ha de superar més exigències que desencadenen en fallades."
+    },
+    "p6": {
+      "title": "10 motius pels quals es descarrega la bateria: ",
+      "text1": "1) Curtcircuit al sistema elèctric.",
+      "text2": "Si es produeix un curtcircuit s'extreu una quantitat de corrent considerable de la bateria en molt poc temps i es converteix en calor.",
+      "text3": "2) Deixar els llums del vehicle encesos.",
+      "text4": "Els llums del vehicle consumeixen molta potència i haurien de quedar apagats quan el vehicle estigui aparcat.",
+      "text5": "3) Calefacció auxiliar",
+      "text6": "Si la calefacció auxiliar no està apagada en cas que la tensió sigui insuficient, la bateria es descarregarà completament. Això també passarà si la bateria utilitzada és massa petita.",
+      "text7": "4) Alternador defectuós",
+      "text8": "Si l'alternador no carrega la bateria durant la conducció, aquesta és l'única font d'alimentació de les unitats de control i altres equips elèctrics, fins que es descarregui completament.",
+      "text9": "5) Regulador de l'alternador defectuós",
+      "text10": "Si el regulador de l'alternador és defectuós es produirà una descàrrega completa a causa d'una càrrega inadequada de la bateria o un excés de càrrega.",
+      "text11": "6) Fallada en la unitat de control",
+      "text12": "Si no es tanquen les unitats de control quan s'apaga el motor seguiran usant la potència i, per tant, provocaran que la bateria es descarregui completament.",
+      "text13": "7) Muntatge d'equips elèctrics",
+      "text14": "Els equips elèctrics addicionals, com el sistema calefactor de seients, generalment consumeixen potència a través de la presa de bec i provoquen una ràpida descàrrega de la bateria.",
+      "text15": "8) Instal·lació d'una bateriaa incorrecta.",
+      "text16": "Les bateries defectuoses s'haurien de substituir sempre per una del mateix tipus per no escurçar la vida útil.",
+      "text17": "9) Trajectes curts",
+      "text18": "En els trajectes curts la quantitat de potència consumida és superior a la que pot proporcionar l'alternador. Per tant, és preferible no utilitzar equips innecessaris (calefactor de seients, ràdio, etc.) a l'hivern.",
+      "text19": "10) Ràdio, TV, DVD, neveres.",
+      "text20": "Les ràdios, els sistemes de navegació i altres dispositius d'entreteniment utilitzen molta potència i provocaran una descàrrega completa de la bateria si aquesta no es recarrega prou."
+    },
+    "p7": {
+      "title": "Com pots ajudar la teva bateria?",
+      "text1": "Els carregadors de bateria C3 i C7 de Bosch tornen la vida a les bateries de manera ràpida i còmoda. El carregador C7 pot fins i tot recarregar totalment sense esforç bateries descarregades. Perquè puguis passar l'hivern sense cap problema. Pots trobar més informació sobre carregadors de bateries de Bosch, accessoris útils i bateries de cotxes a: Lloc web de carregadors de bateries."
+    },
+    "p8": {
+      "title": "És segur recarregar bateries?",
+      "text1": "No cal preocupar-se! El sistema de càrrega electrònica dels carregadors de bateries C3 i C7 Bosch, comproven automàticament la càrrega que necessita o pot acceptar de veritat la bateria del teu cotxe, amb independència del tipus de bateria de què es tracti, però recarregar-la és totalment segur en qualsevol cas: en tractar-se d'una operació que consisteix a prémer un botó, un ús incorrecte és gairebé impossible i els terminals romanen sense energia si no estan connectats als connectors o ho estan de manera incorrecta. Això significa que pots carregar la bateria del teu cotxe sense cap risc i, si és necessari, sense haver de treure-la del vehicle."
+    },
+    "p9": {
+      "title": "8 maneres d'ampliar la vida útil",
+      "text1": "1) Comproveu periòdicament la tensió, el nivell de càrrega i la potència d'arrencada de la bateria, així com la pèrdua de potència al cotxe.",
+      "text2": "2) És recomanable treure la bateria abans de deixar un cotxe fora de servei durant l'hivern. El nostre consell: guarda-la en un lloc fresc.",
+      "text3": "3) Inspecciona la bateria almenys 2 cops l'any, un cop al mes a l'hivern (en cas de gelades) si es tracta de bateries més velles.",
+      "text4": "4) Comprova que la bateria està col·locada fermament al compartiment de la bateria i que les parts metàl·liques de la bateria estan greixades i els terminals assegurats amb fermesa.",
+      "text5": "5) Quan sigui possible, evita la descàrrega completa de la bateria (produïda, per exemple, en deixar els llums encesos).",
+      "text6": "6) Trepitja l'embragatge en arrencar el vehicle per reduir la resistència d'arrencada i així el consum de potència.",
+      "text7": "7) Apaga tot l'equip innecessari com ara la ràdio, l'aire condicionat o l'escalfador del motor auxiliar abans d'arrencar.",
+      "text8": "8) Després d'un llarg període d'inactivitat, traieu la bateria i connecteu-la a un carregador controlat electrònicament."
+    }
+  }
+}

@@ -38,8 +38,7 @@ a:hover {
 .company-title {
   color: #003253;
   font-family: boschsanscond-bold, sans-serif;
-  font-size: 48px;
-  font-weight: 700;
+  padding-top: 1.5rem !important;
 }
 
 .company-big-title {
@@ -51,16 +50,16 @@ a:hover {
 
 .company-text {
   font-family: boschsans-regular, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .custom-v-card {
-  height: 90%;
+  height: 100%;
 }
 
-.custom-v-card-text {
-  padding-bottom: 3rem !important;
+.custom-v-row {
+  margin-bottom: 20px;
 }
 
 .motto {

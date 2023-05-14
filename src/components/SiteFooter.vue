@@ -9,11 +9,11 @@ import LanguageSelector from './LanguageSelector.vue';
       <v-col class="text-center mt-4 mb-4" cols="12" sm="10">
         <span>
           {{ $t('legal.copyright') }}
-          <router-link to="legal-notice">
+          <router-link to="/legal-notice">
             {{ $t('legal.title') }}
           </router-link>
           -
-          <router-link to="rgpd-notice">
+          <router-link to="/rgpd-notice">
             {{ $t('legal.rgpd') }}
           </router-link>
         </span>

@@ -29,6 +29,18 @@ const router = createRouter({
       component: () => import('../views/Advices.vue'),
     },
     {
+      path: '/advice',
+      name: 'advice',
+      component: () => import('../components/Advice.vue'),
+      children: [
+        {
+          path: 'battery',
+          name: 'battery',
+          component: () => import('../components/advices/Battery.vue'),
+        },
+      ],
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutUs.vue'),

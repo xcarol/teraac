@@ -1,5 +1,10 @@
 # Notes de la versió
 
+## 1.3.1
+
+* Afegir consells sobre bateries  
+**(A LA ESPERA DE VALIDACIÓ ABANS DE CONTINUAR)**
+
 ## 1.3.0
 
 * Afegir consells útils
