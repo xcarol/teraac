@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ "49-statistics-for-spa" ]
+    branches: [ "master" ]
 
 name: Build & Deploy to Stage
 jobs:
@@ -91,4 +91,4 @@ jobs:
         subject: Nova versió (${{ needs.build.outputs.sha }}) de la web (DE PROVES)
         from: xcarolr@gmail.com
         html_body: file://./new-version.html
-        to: xcarolr@gmail.com
+        to: xcarolr@gmail.com, info@teraac.com
