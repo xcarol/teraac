@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "49-statistics-for-spa" ]
 
 name: Build & Deploy to Stage
 jobs:
@@ -28,6 +28,13 @@ jobs:
       with:
         name: notes
         path: ./ReleaseNotes.md
+    - name: Store short commit id
+      id: short-commit
+      run: |
+        id=$(echo $GITHUB_SHA | cut -b-7)
+        echo "sha=$id" >> $GITHUB_OUTPUT
+    outputs:
+      sha: ${{ steps.short-commit.outputs.sha }}
   deploy:
     needs: build
     name: Deploy
@@ -45,7 +52,7 @@ jobs:
         password: ${{ secrets.ftp_password }}
         local-dir: ./dist/
   email:
-    needs: deploy
+    needs: [build, deploy]
     name: Email
     runs-on: ubuntu-latest
     steps:
@@ -59,15 +66,12 @@ jobs:
       uses: juliangruber/read-file-action@v1.1.6
       with:
         path: ./ReleaseNotes.md
-    - uses: dawidd6/action-send-mail@v3.7.1
+    - name: Create email body
+      uses: DamianReeves/write-file-action@master
       with:
-        server_address: smtp.gmail.com
-        server_port: 465
-        username: ${{ secrets.MY_EMAIL }}
-        password: ${{ secrets.MY_EMAIL_PASSWORD }}
-        subject: Nova versió de la web (DE PROVES)
-        from: xcarolr@gmail.com
-        body: |
+        path: ./new-version.html
+        write-mode: overwrite
+        contents: |
           Bones,
 
           Hi ha una versió de la web de proves: teraac.xicra.com
@@ -77,4 +81,14 @@ jobs:
           ${{ steps.read-file.outputs.content }}
 
           Salutacions!
-        to: xcarolr@gmail.com, info@teraac.com
+    - uses: dawidd6/action-send-mail@v3.7.1
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{ secrets.MY_EMAIL }}
+        password: ${{ secrets.MY_EMAIL_PASSWORD }}
+        convert_markdown: true
+        subject: Nova versió (${{ needs.build.outputs.sha }}) de la web (DE PROVES)
+        from: xcarolr@gmail.com
+        html_body: file://./new-version.html
+        to: xcarolr@gmail.com
