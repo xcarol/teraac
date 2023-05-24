@@ -1,5 +1,9 @@
 # Notes de la versió
 
+## 1.4.0
+
+* Enviar dades a Google Analytics per saber quin un us de la web fan els usuaris  
+
 ## 1.3.1
 
 * Afegir consells sobre bateries  
