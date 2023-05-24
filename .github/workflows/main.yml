@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ "49-statistics-for-spa" ]
+    branches: [ "master" ]
 
 name: Build & Deploy to Stage
 jobs:
