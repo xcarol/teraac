@@ -23,5 +23,14 @@ export default {
   data: () => ({
     banner,
   }),
+
+  watch: {
+    '$i18n.locale': {
+      immediate: true,
+      handler() {
+        this.head.changeTitle();
+      },
+    },
+  },
 };
 </script>

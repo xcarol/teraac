@@ -45,6 +45,15 @@ export default {
       this.$router.push({ name: page });
     },
   },
+
+  watch: {
+    '$i18n.locale': {
+      immediate: true,
+      handler() {
+        this.head.changeTitle('menu.advices', 'advices.title');
+      },
+    },
+  },
 };
 </script>
 

@@ -1,5 +1,11 @@
 # Notes de la versió
 
+## 1.4.1
+
+* Deshabilitar temporalment l'apartat de consells
+* Ordenar i afegir marques i col·laboradors
+* Millores del SEO
+
 ## 1.4.0
 
 * Enviar dades a Google Analytics per saber quin un us de la web fan els usuaris  
