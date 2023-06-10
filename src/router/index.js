@@ -28,18 +28,18 @@ const router = createRouter({
       name: 'advices',
       component: () => import('../views/Advices.vue'),
     },
-    {
-      path: '/advice',
-      name: 'advice',
-      component: () => import('../components/Advice.vue'),
-      children: [
-        {
-          path: 'battery',
-          name: 'battery',
-          component: () => import('../components/advices/Battery.vue'),
-        },
-      ],
-    },
+    // {
+    //   path: '/advice',
+    //   name: 'advice',
+    //   component: () => import('../components/Advice.vue'),
+    //   children: [
+    //     {
+    //       path: 'battery',
+    //       name: 'battery',
+    //       component: () => import('../components/advices/Battery.vue'),
+    //     },
+    //   ],
+    // },
     {
       path: '/about',
       name: 'about',
