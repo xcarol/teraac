@@ -100,5 +100,14 @@ export default {
       { name: 'webasto', logo: webasto },
     ],
   }),
+
+  watch: {
+    '$i18n.locale': {
+      immediate: true,
+      handler() {
+        this.head.changeTitle('menu.contributions', 'contributions.title');
+      },
+    },
+  },
 };
 </script>

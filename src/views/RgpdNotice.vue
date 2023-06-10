@@ -26,5 +26,14 @@ export default {
       return this.$cookies.get('locale') || this.$i18n.locale;
     },
   },
+
+  watch: {
+    '$i18n.locale': {
+      immediate: true,
+      handler() {
+        this.head.changeTitle('', 'rgdp.title');
+      },
+    },
+  },
 };
 </script>

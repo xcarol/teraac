@@ -49,6 +49,15 @@ export default {
     this.phone2 = `tel:${this.$t('contact.phone2')}`;
     this.mapurl = import.meta.env.VITE_EMBEDDED_MAP;
   },
+
+  watch: {
+    '$i18n.locale': {
+      immediate: true,
+      handler() {
+        this.head.changeTitle();
+      },
+    },
+  },
 };
 </script>
 
