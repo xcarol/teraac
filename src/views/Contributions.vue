@@ -38,12 +38,14 @@ import race from '../assets/companies/7race.jpg';
 import autoclub from '../assets/companies/8autoclub.jpg';
 import mapfre from '../assets/companies/9 mapfre.jpg';
 import cea from '../assets/companies/10cea.jpg';
+import ald from '../assets/companies/aldautomotive.jpg';
 
 import alpine from '../assets/brands/alpine.jpg';
 import aragon from '../assets/brands/aragon.jpg';
 import audison from '../assets/brands/audison.jpg';
 import blaupunkt from '../assets/brands/blaupunkt.jpg';
 import boschb from '../assets/brands/bosch.jpg';
+import carcentinel from '../assets/brands/carcentinel.jpg';
 import diavia from '../assets/brands/diavia.jpg';
 import dirna from '../assets/brands/dirna.jpg';
 import dometic from '../assets/brands/dometic.jpg';
@@ -64,6 +66,7 @@ export default {
   data: () => ({
     companies: [
       bosch,
+      ald,
       leaseplan,
       arval,
       detector,
@@ -75,23 +78,24 @@ export default {
       cea,
     ],
     brands: [
+      { name: 'boschb', logo: boschb },
+      { name: 'valvoline', logo: valvoline },
+      { name: 'diavia', logo: diavia },
+      { name: 'dirna', logo: dirna },
+      { name: 'carcentinale', logo: carcentinel },
+      { name: 'monroe', logo: monroe },
       { name: 'alpine', logo: alpine },
       { name: 'aragon', logo: aragon },
       { name: 'audison', logo: audison },
       { name: 'blaupunkt', logo: blaupunkt },
-      { name: 'boschb', logo: boschb },
       { name: 'detector', logo: detector },
-      { name: 'diavia', logo: diavia },
-      { name: 'dirna', logo: dirna },
       { name: 'dometic', logo: dometic },
       { name: 'dunlop', logo: dunlop },
       { name: 'goodyear', logo: goodyear },
       { name: 'hertz', logo: hertz },
       { name: 'kenwood', logo: kenwood },
-      { name: 'monroe', logo: monroe },
       { name: 'parrot', logo: parrot },
       { name: 'tomtom', logo: tomtom },
-      { name: 'valvoline', logo: valvoline },
       { name: 'waeco', logo: waeco },
       { name: 'webasto', logo: webasto },
     ],
