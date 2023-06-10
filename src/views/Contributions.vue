@@ -8,7 +8,7 @@
       <v-row dense>
         <v-col cols="6" sm="4" md="2" v-for="(company, index) in companies" :key="index">
           <v-card class="ma-2 elevation-8">
-            <v-img class="ma-5" :src="company"></v-img>
+            <v-img class="ma-5" :alt="company.name" :src="company.logo"></v-img>
           </v-card>
         </v-col>
       </v-row>
@@ -18,7 +18,7 @@
       <v-row dense class="custom-v-row">
         <v-col cols="6" sm="4" md="2" v-for="(brand, index) in brands" :key="index">
           <v-card class="ma-2 elevation-8 custom-v-card">
-            <v-img class="ma-5" :src="brand.logo"></v-img>
+            <v-img class="ma-5" :alt="brand.name" :src="brand.logo"></v-img>
             <v-card-text class="text-center">{{ $t(`brands.${brand.name}`) }}</v-card-text>
           </v-card>
         </v-col>
@@ -65,20 +65,20 @@ export default {
 
   data: () => ({
     companies: [
-      bosch,
-      ald,
-      leaseplan,
-      arval,
-      detector,
-      racc,
-      adac,
-      race,
-      autoclub,
-      mapfre,
-      cea,
+      { name: 'bosch', logo: bosch },
+      { name: 'aldautomotive', logo: ald },
+      { name: 'leaseplan', logo: leaseplan },
+      { name: 'arval', logo: arval },
+      { name: 'detector', logo: detector },
+      { name: 'racc', logo: racc },
+      { name: 'adac', logo: adac },
+      { name: 'race', logo: race },
+      { name: 'autoclub', logo: autoclub },
+      { name: 'mapfre', logo: mapfre },
+      { name: 'cea', logo: cea },
     ],
     brands: [
-      { name: 'boschb', logo: boschb },
+      { name: 'bosch', logo: boschb },
       { name: 'valvoline', logo: valvoline },
       { name: 'diavia', logo: diavia },
       { name: 'dirna', logo: dirna },
