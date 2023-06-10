@@ -31,7 +31,7 @@ export default {
     '$i18n.locale': {
       immediate: true,
       handler() {
-        this.head.changeTitle('', 'rgdp.title');
+        this.head.changeTitle('', 'rgpd.title');
       },
     },
   },
